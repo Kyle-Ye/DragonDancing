@@ -22,15 +22,12 @@ struct ContentView: View {
                     HomeScene()
 //                case 1:
 //                    MeetingScene()
-//                case 2:
-//                    ActionScene()
+                case .action:
+                    ActionScene()
                 case .emotion:
                     EmoticonScene()
                 case .exhibition:
                     ExhibitionScene()
-
-                default:
-                    HomeScene()
                 }
             }
             VStack {

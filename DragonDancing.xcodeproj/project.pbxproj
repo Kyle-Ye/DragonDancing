@@ -12,9 +12,9 @@
 		274B32F3263E376A00E077C6 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 274B32F2263E376A00E077C6 /* SwiftyGif */; };
 		274B32F5263E391100E077C6 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F4263E391100E077C6 /* GIFImage.swift */; };
 		274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F9263E3D8D00E077C6 /* DIYScene.swift */; };
-		274B32FE263E460200E077C6 /* LionActionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FD263E460200E077C6 /* LionActionsScene.swift */; };
+		274B32FE263E460200E077C6 /* ActionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FD263E460200E077C6 /* ActionsScene.swift */; };
 		274B3300263E463200E077C6 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FF263E463200E077C6 /* Action.swift */; };
-		274B3302263E468D00E077C6 /* LionActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3301263E468D00E077C6 /* LionActionView.swift */; };
+		274B3302263E468D00E077C6 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3301263E468D00E077C6 /* ActionView.swift */; };
 		2795D4992639388E00DB2350 /* DotSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795D4982639388E00DB2350 /* DotSlider.swift */; };
 		2795D4B626394F4C00DB2350 /* EmoticonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795D4B526394F4C00DB2350 /* EmoticonScene.swift */; };
 		27A00DB4262F1776001FF431 /* DragonDancingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A00DB3262F1776001FF431 /* DragonDancingApp.swift */; };
@@ -22,6 +22,7 @@
 		27A00DB8262F1776001FF431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A00DB7262F1776001FF431 /* Assets.xcassets */; };
 		27A00DBB262F1776001FF431 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A00DBA262F1776001FF431 /* Preview Assets.xcassets */; };
 		27A7EBB7262F2A550045FDAD /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7EBB6262F2A550045FDAD /* HomeScene.swift */; };
+		27A9981626404DEA0067D4F1 /* ActionTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9981526404DEA0067D4F1 /* ActionTab.swift */; };
 		27DDCFDB263D51B9008E36A2 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDA263D51B9008E36A2 /* Emoticon.swift */; };
 		27DDCFDE263D5299008E36A2 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDD263D5299008E36A2 /* EmoticonView.swift */; };
 		27DDCFE0263D7582008E36A2 /* Lionhead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDF263D7582008E36A2 /* Lionhead.swift */; };
@@ -41,7 +42,7 @@
 		27E5BCFB26402D1D004C6C64 /* 玩绣球.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27E5BCFA26402D1D004C6C64 /* 玩绣球.gif */; };
 		27E5BCFD26402D28004C6C64 /* 梅花桩.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27E5BCFC26402D28004C6C64 /* 梅花桩.gif */; };
 		27E5BCFF26402D32004C6C64 /* 踩大球.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27E5BCFE26402D32004C6C64 /* 踩大球.gif */; };
-		27E5BD0126402D3B004C6C64 /* 上高桌.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27E5BD0026402D3B004C6C64 /* 上高桌.gif */; };
+		27E5BD0126402D3B004C6C64 /* 踩高桌.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27E5BD0026402D3B004C6C64 /* 踩高桌.gif */; };
 		27E5BD042640306D004C6C64 /* NavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BD032640306D004C6C64 /* NavigationMenu.swift */; };
 		27E5BD0626403225004C6C64 /* NavigationWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BD0526403225004C6C64 /* NavigationWorld.swift */; };
 		27E92462263F92C900ADBB81 /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E92461263F92C900ADBB81 /* Exhibition.swift */; };
@@ -55,9 +56,9 @@
 		2723F350263E914E00AD303E /* Lion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 		274B32F4263E391100E077C6 /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		274B32F9263E3D8D00E077C6 /* DIYScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYScene.swift; sourceTree = "<group>"; };
-		274B32FD263E460200E077C6 /* LionActionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionActionsScene.swift; sourceTree = "<group>"; };
+		274B32FD263E460200E077C6 /* ActionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsScene.swift; sourceTree = "<group>"; };
 		274B32FF263E463200E077C6 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		274B3301263E468D00E077C6 /* LionActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionActionView.swift; sourceTree = "<group>"; };
+		274B3301263E468D00E077C6 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		2795D4982639388E00DB2350 /* DotSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSlider.swift; sourceTree = "<group>"; };
 		2795D4B526394F4C00DB2350 /* EmoticonScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonScene.swift; sourceTree = "<group>"; };
 		27A00DB0262F1776001FF431 /* DragonDancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonDancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +68,7 @@
 		27A00DBA262F1776001FF431 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27A00DBC262F1776001FF431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27A7EBB6262F2A550045FDAD /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
+		27A9981526404DEA0067D4F1 /* ActionTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTab.swift; sourceTree = "<group>"; };
 		27DDCFDA263D51B9008E36A2 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		27DDCFDD263D5299008E36A2 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		27DDCFDF263D7582008E36A2 /* Lionhead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lionhead.swift; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		27E5BCFA26402D1D004C6C64 /* 玩绣球.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "玩绣球.gif"; sourceTree = "<group>"; };
 		27E5BCFC26402D28004C6C64 /* 梅花桩.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "梅花桩.gif"; sourceTree = "<group>"; };
 		27E5BCFE26402D32004C6C64 /* 踩大球.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "踩大球.gif"; sourceTree = "<group>"; };
-		27E5BD0026402D3B004C6C64 /* 上高桌.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "上高桌.gif"; sourceTree = "<group>"; };
+		27E5BD0026402D3B004C6C64 /* 踩高桌.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "踩高桌.gif"; sourceTree = "<group>"; };
 		27E5BD032640306D004C6C64 /* NavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenu.swift; sourceTree = "<group>"; };
 		27E5BD0526403225004C6C64 /* NavigationWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWorld.swift; sourceTree = "<group>"; };
 		27E92461263F92C900ADBB81 /* Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exhibition.swift; sourceTree = "<group>"; };
@@ -265,8 +267,9 @@
 		27E5BCF526402859004C6C64 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				274B3301263E468D00E077C6 /* LionActionView.swift */,
-				274B32FD263E460200E077C6 /* LionActionsScene.swift */,
+				274B32FD263E460200E077C6 /* ActionsScene.swift */,
+				27A9981526404DEA0067D4F1 /* ActionTab.swift */,
+				274B3301263E468D00E077C6 /* ActionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,7 +307,7 @@
 				27E5BCFC26402D28004C6C64 /* 梅花桩.gif */,
 				27E5BCFE26402D32004C6C64 /* 踩大球.gif */,
 				27E5BCFA26402D1D004C6C64 /* 玩绣球.gif */,
-				27E5BD0026402D3B004C6C64 /* 上高桌.gif */,
+				27E5BD0026402D3B004C6C64 /* 踩高桌.gif */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -397,7 +400,7 @@
 				27E5BCFF26402D32004C6C64 /* 踩大球.gif in Resources */,
 				27E5BCFD26402D28004C6C64 /* 梅花桩.gif in Resources */,
 				27E5BCF926402D13004C6C64 /* 跳高台.gif in Resources */,
-				27E5BD0126402D3B004C6C64 /* 上高桌.gif in Resources */,
+				27E5BD0126402D3B004C6C64 /* 踩高桌.gif in Resources */,
 				27A00DBB262F1776001FF431 /* Preview Assets.xcassets in Resources */,
 				27E5BCFB26402D1D004C6C64 /* 玩绣球.gif in Resources */,
 				27A00DB8262F1776001FF431 /* Assets.xcassets in Resources */,
@@ -414,6 +417,7 @@
 				27E5BCDC263FEA13004C6C64 /* ExhibitionTab.swift in Sources */,
 				27FA47A526390AC50041E79A /* Colors.swift in Sources */,
 				274B32F5263E391100E077C6 /* GIFImage.swift in Sources */,
+				27A9981626404DEA0067D4F1 /* ActionTab.swift in Sources */,
 				2723F34F263E913000AD303E /* Tool.swift in Sources */,
 				274B3300263E463200E077C6 /* Action.swift in Sources */,
 				27E5BCDE263FEA13004C6C64 /* ExhibitionDetailView.swift in Sources */,
@@ -426,7 +430,7 @@
 				27FA47A32639060C0041E79A /* VerticalText.swift in Sources */,
 				274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */,
 				27E5BCDF263FEA13004C6C64 /* ExhibitionScene.swift in Sources */,
-				274B3302263E468D00E077C6 /* LionActionView.swift in Sources */,
+				274B3302263E468D00E077C6 /* ActionView.swift in Sources */,
 				27E5BCE0263FEA13004C6C64 /* ExhibitionMenu.swift in Sources */,
 				27E5BCF226400DD3004C6C64 /* CustomScale.swift in Sources */,
 				27E5BD0626403225004C6C64 /* NavigationWorld.swift in Sources */,
@@ -440,7 +444,7 @@
 				2723F351263E914E00AD303E /* Lion.swift in Sources */,
 				27E5BCE6263FEF76004C6C64 /* ExhibitionDetailMenu.swift in Sources */,
 				27E92462263F92C900ADBB81 /* Exhibition.swift in Sources */,
-				274B32FE263E460200E077C6 /* LionActionsScene.swift in Sources */,
+				274B32FE263E460200E077C6 /* ActionsScene.swift in Sources */,
 				27DDCFDE263D5299008E36A2 /* EmoticonView.swift in Sources */,
 				27DDCFE2263D841F008E36A2 /* snapshot.swift in Sources */,
 				27E5BCE4263FEA7C004C6C64 /* ExhibitionWorld.swift in Sources */,

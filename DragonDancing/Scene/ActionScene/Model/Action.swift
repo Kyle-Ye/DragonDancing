@@ -24,7 +24,7 @@ extension Array where Element == Action {
         Action(name: "踩大球"),
         Action(name: "玩绣球"),
         Action(name: "踩高桌"),
-        Action(name: "上高台"),
+        Action(name: "跳高台"),
         Action(name: "梅花桩"),
     ]
 }

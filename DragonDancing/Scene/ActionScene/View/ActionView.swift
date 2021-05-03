@@ -1,5 +1,5 @@
 //
-//  LionActionView.swift
+//  ActionView.swift
 //  DragonDancing
 //
 //  Created by Kyle on 2021/5/2.
@@ -7,17 +7,16 @@
 
 import SwiftUI
 
-struct LionActionView: View {
-    var lionAction: Action
+struct ActionView: View {
+    let action: Action
     var showGIF = false
     var body: some View {
-        ZStack{
-            Image(lionAction.imageName)
+        ZStack {
+            Image(action.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 500)
                 .overlay(
-                    VerticalText(text: lionAction.name)
+                    VerticalText(text: action.name)
                         .font(.title2.bold())
                         .foregroundColor(.titleText)
                         .padding()
@@ -27,17 +26,18 @@ struct LionActionView: View {
                         )
                         .padding()
                     , alignment: .topTrailing
-                )                 
-            if showGIF{
-                GIFImage(named: lionAction.gifName)
-                    .animation(.easeIn(duration: 5))
-            }
+                )
+                .customScaleEffect(in: .named("action_scene")) {
+                    GIFImage(named: action.gifName)
+                        .scaleEffect(0.1
+                        )
+                }
         }
     }
 }
 
-struct LionActionView_Previews: PreviewProvider {
+struct ActionView_Previews: PreviewProvider {
     static var previews: some View {
-        LionActionView(lionAction: .init(name: "玩绣球"))
+        ActionView(action: [Action].all.randomElement()!)
     }
 }
