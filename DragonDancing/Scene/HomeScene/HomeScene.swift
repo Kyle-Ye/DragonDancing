@@ -20,14 +20,25 @@ struct HomeScene: View {
                 TimeLine()
             }
         }.overlay(
-            HStack {
+            HStack(spacing: 80) {
                 Label("文创", systemImage: "pencil.circle")
+                    .font(.title)
+                    .onTapGesture {
+                        world.showMenu = false
+                        world.currentTab = .culture
+                    }
                 Label("DIY", systemImage: "pencil.circle")
+                    .font(.title)
                     .onTapGesture {
                         world.showMenu = false
                         world.currentTab = .diy
                     }
-                Label("分享", systemImage: "pencil.circle")
+                Label("印章", systemImage: "pencil.circle")
+                    .font(.title)
+                    .onTapGesture {
+                        world.showMenu = false
+                        world.currentTab = .seal
+                    }
             }.labelStyle(VerticalLabelStyle()),
             alignment: .bottomTrailing
         )

@@ -18,5 +18,7 @@ enum SceneTab: Int {
     case action
     case emotion
     case exhibition
+    case culture
     case diy
+    case seal
 }

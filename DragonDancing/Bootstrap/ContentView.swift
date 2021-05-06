@@ -29,8 +29,12 @@ struct ContentView: View {
                     EmoticonScene()
                 case .exhibition:
                     ExhibitionScene()
+                case .culture:
+                    CultureScene()
                 case .diy:
                     DIYScene()
+                case .seal:
+                    SealScene()
                 }
             }
             VStack {

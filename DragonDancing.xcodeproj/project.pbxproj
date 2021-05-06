@@ -23,6 +23,12 @@
 		27A00DBB262F1776001FF431 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A00DBA262F1776001FF431 /* Preview Assets.xcassets */; };
 		27A7EBB7262F2A550045FDAD /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7EBB6262F2A550045FDAD /* HomeScene.swift */; };
 		27A9981626404DEA0067D4F1 /* ActionTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9981526404DEA0067D4F1 /* ActionTab.swift */; };
+		27CB558B26437928009658DE /* CultureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB558A26437928009658DE /* CultureScene.swift */; };
+		27CB558D26437937009658DE /* CultureMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB558C26437937009658DE /* CultureMenu.swift */; };
+		27CB558F26437987009658DE /* SealScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB558E26437987009658DE /* SealScene.swift */; };
+		27CB5591264379E1009658DE /* SealMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB5590264379E1009658DE /* SealMenu.swift */; };
+		27CB559326437F0F009658DE /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB559226437F0F009658DE /* Culture.swift */; };
+		27CB559526437F18009658DE /* CultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB559426437F18009658DE /* CultureView.swift */; };
 		27DDCFDB263D51B9008E36A2 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDA263D51B9008E36A2 /* Emoticon.swift */; };
 		27DDCFDE263D5299008E36A2 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDD263D5299008E36A2 /* EmoticonView.swift */; };
 		27DDCFE2263D841F008E36A2 /* snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFE1263D841F008E36A2 /* snapshot.swift */; };
@@ -73,6 +79,12 @@
 		27A00DBC262F1776001FF431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27A7EBB6262F2A550045FDAD /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		27A9981526404DEA0067D4F1 /* ActionTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTab.swift; sourceTree = "<group>"; };
+		27CB558A26437928009658DE /* CultureScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureScene.swift; sourceTree = "<group>"; };
+		27CB558C26437937009658DE /* CultureMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureMenu.swift; sourceTree = "<group>"; };
+		27CB558E26437987009658DE /* SealScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealScene.swift; sourceTree = "<group>"; };
+		27CB5590264379E1009658DE /* SealMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealMenu.swift; sourceTree = "<group>"; };
+		27CB559226437F0F009658DE /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
+		27CB559426437F18009658DE /* CultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureView.swift; sourceTree = "<group>"; };
 		27DDCFDA263D51B9008E36A2 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		27DDCFDD263D5299008E36A2 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		27DDCFE1263D841F008E36A2 /* snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapshot.swift; sourceTree = "<group>"; };
@@ -185,6 +197,50 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		27CB55882643787A009658DE /* CultureScene */ = {
+			isa = PBXGroup;
+			children = (
+				27CB559626437F1C009658DE /* Model */,
+				27CB559726437F22009658DE /* View */,
+			);
+			path = CultureScene;
+			sourceTree = "<group>";
+		};
+		27CB5589264378AF009658DE /* SealScene */ = {
+			isa = PBXGroup;
+			children = (
+				27CB558E26437987009658DE /* SealScene.swift */,
+				27CB5590264379E1009658DE /* SealMenu.swift */,
+			);
+			path = SealScene;
+			sourceTree = "<group>";
+		};
+		27CB559626437F1C009658DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27CB559226437F0F009658DE /* Culture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27CB559726437F22009658DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27CB558A26437928009658DE /* CultureScene.swift */,
+				27CB558C26437937009658DE /* CultureMenu.swift */,
+				27CB559826437F33009658DE /* ModelView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27CB559826437F33009658DE /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				27CB559426437F18009658DE /* CultureView.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
 		27E5BCD5263FEA13004C6C64 /* ExhibitionScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,18 +287,18 @@
 			isa = PBXGroup;
 			children = (
 				27E5BCEB2640082A004C6C64 /* EmoticonWorld.swift */,
-				27E5BCE8263FFB61004C6C64 /* Models */,
+				27E5BCE8263FFB61004C6C64 /* Model */,
 				27E5BCEA2640080A004C6C64 /* View */,
 			);
 			path = EmoticonScene;
 			sourceTree = "<group>";
 		};
-		27E5BCE8263FFB61004C6C64 /* Models */ = {
+		27E5BCE8263FFB61004C6C64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				27DDCFDA263D51B9008E36A2 /* Emoticon.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		27E5BCE9264007BA004C6C64 /* ModelView */ = {
@@ -365,7 +421,9 @@
 				27E5BCF32640282E004C6C64 /* ActionScene */,
 				27E5BCE7263FFB14004C6C64 /* EmoticonScene */,
 				27E5BCD5263FEA13004C6C64 /* ExhibitionScene */,
+				27CB55882643787A009658DE /* CultureScene */,
 				27E5BCF72640288F004C6C64 /* DIYScene */,
+				27CB5589264378AF009658DE /* SealScene */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -450,25 +508,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CB559326437F0F009658DE /* Culture.swift in Sources */,
 				27E5BCDC263FEA13004C6C64 /* ExhibitionTab.swift in Sources */,
 				27FA47A526390AC50041E79A /* Colors.swift in Sources */,
 				274B32F5263E391100E077C6 /* GIFImage.swift in Sources */,
 				27A9981626404DEA0067D4F1 /* ActionTab.swift in Sources */,
 				2723F34F263E913000AD303E /* Tool.swift in Sources */,
 				274B3300263E463200E077C6 /* Action.swift in Sources */,
+				27CB559526437F18009658DE /* CultureView.swift in Sources */,
 				27E5BCDE263FEA13004C6C64 /* ExhibitionDetailView.swift in Sources */,
+				27CB558F26437987009658DE /* SealScene.swift in Sources */,
 				27F4E0CE26424ADD00BB0380 /* DIYWorld.swift in Sources */,
 				27FA479E2638F4370041E79A /* Instrument.swift in Sources */,
 				27E5BCF026400BD6004C6C64 /* EmoticonTab.swift in Sources */,
 				27A00DB6262F1776001FF431 /* ContentView.swift in Sources */,
 				27E5BCEC2640082A004C6C64 /* EmoticonWorld.swift in Sources */,
 				27A7EBB7262F2A550045FDAD /* HomeScene.swift in Sources */,
+				27CB558D26437937009658DE /* CultureMenu.swift in Sources */,
 				27A00DB4262F1776001FF431 /* DragonDancingApp.swift in Sources */,
 				27F4E0CA26423C8500BB0380 /* Organ.swift in Sources */,
 				27FA47A32639060C0041E79A /* VerticalText.swift in Sources */,
 				274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */,
 				27E5BCDF263FEA13004C6C64 /* ExhibitionScene.swift in Sources */,
 				274B3302263E468D00E077C6 /* ActionView.swift in Sources */,
+				27CB5591264379E1009658DE /* SealMenu.swift in Sources */,
 				27E5BCE0263FEA13004C6C64 /* ExhibitionMenu.swift in Sources */,
 				27E5BCF226400DD3004C6C64 /* CustomScale.swift in Sources */,
 				27E5BD0626403225004C6C64 /* NavigationWorld.swift in Sources */,
@@ -487,6 +550,7 @@
 				27DDCFDE263D5299008E36A2 /* EmoticonView.swift in Sources */,
 				27DDCFE2263D841F008E36A2 /* snapshot.swift in Sources */,
 				27F4E0D326428C8B00BB0380 /* ShareView.swift in Sources */,
+				27CB558B26437928009658DE /* CultureScene.swift in Sources */,
 				27E5BCE4263FEA7C004C6C64 /* ExhibitionWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
