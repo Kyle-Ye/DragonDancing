@@ -16,6 +16,7 @@ struct ContentView: View {
                 if world.showMenu {
                     NavigationMenu()
                     Divider()
+                    Spacer()
                 }
                 switch world.currentTab {
                 case .home:
@@ -28,6 +29,8 @@ struct ContentView: View {
                     EmoticonScene()
                 case .exhibition:
                     ExhibitionScene()
+                case .diy:
+                    DIYScene()
                 }
             }
             VStack {

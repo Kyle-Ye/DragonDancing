@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeScene: View {
+    @EnvironmentObject var world: NavigationWorld
+
     var body: some View {
         ZStack {
             Image("map")
@@ -17,13 +19,18 @@ struct HomeScene: View {
                 Spacer()
                 TimeLine()
             }
-            VStack {
-                Spacer()
-                HStack {
-                    ButtonGroup(labels: ["集市", "长卷", "表情包"])
-                }
-            }
-        }
+        }.overlay(
+            HStack {
+                Label("文创", systemImage: "pencil.circle")
+                Label("DIY", systemImage: "pencil.circle")
+                    .onTapGesture {
+                        world.showMenu = false
+                        world.currentTab = .diy
+                    }
+                Label("分享", systemImage: "pencil.circle")
+            }.labelStyle(VerticalLabelStyle()),
+            alignment: .bottomTrailing
+        )
     }
 }
 
@@ -36,34 +43,17 @@ struct TimeLine: View {
     }
 }
 
-struct ButtonGroup: View {
-    var labels: [String]
-
-    var body: some View {
-        HStack {
-            ForEach(labels, id: \.self) { label in
-                Text("\(label)")
-                    .font(.title)
-                    .padding(.horizontal, 30)
-                if labels.last != label {
-                    Rectangle()
-                        .fill()
-                        .foregroundColor(.purple)
-                        .frame(width: 2, height: 35)
-                }
-            }
-        }
-        .padding(.vertical, 10)
-        .padding(.horizontal)
-        .background(
-            RoundedRectangle(cornerRadius: 15)
-                .strokeBorder(Color.purple, lineWidth: 3, antialiased: true)
-        )
-    }
-}
-
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScene()
+    }
+}
+
+struct VerticalLabelStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        VStack {
+            configuration.icon
+            configuration.title
+        }
     }
 }
