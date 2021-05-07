@@ -12,27 +12,38 @@ struct EmoticonTab: View {
     @State var selection = 0
 
     var body: some View {
-//        ScrollView(.horizontal,
-//                   showsIndicators: false) {
-//            HStack {
-//                ForEach(emoticons, id: \.name) { emoticon in
-//                    EmoticonView(emoticon: emoticon)
-//                        .frame(width: 700)
-//                        .padding()
-//                }
-//            }
-//        }
-//        .coordinateSpace(name: "emoticon_tab")
-
-        VStack {
-            TabView(selection: $selection) {
-                ForEach(emoticons.indices) { index in
-                    EmoticonDetailView(emoticon: emoticons[index])
-                        .tag(index)
-                }
+        HStack(alignment: .top, spacing: 50) {
+            VStack(alignment: .leading, spacing: 113) {
+                Text(emoticons[selection].name)
+                    .font(.largeTitle)
+                    .foregroundColor(.titleText)
+                    .padding(.vertical, 25)
+                    .padding(.horizontal, 5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 13)
+                            .strokeBorder(Color.titleText, lineWidth: 2, antialiased: true)
+                    )
+                    .padding()
+                Text(emoticons[selection].description)
+                    .foregroundColor(Color("body_text"))
+                    .font(.title)
+                    .frame(width: 250)
+                    .padding(.leading, 100)
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            DotSlider(number: emoticons.count, showLine: false, value: $selection)
+            .padding(.leading, 50)
+            VStack {
+                TabView(selection: $selection) {
+                    ForEach(emoticons.indices) { index in
+                        Image(emoticons[index].imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(idealWidth: 700)
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                DotSlider(number: emoticons.count, showLine: false, value: $selection)
+            }
+            
         }
         .padding(.vertical, 100)
     }
