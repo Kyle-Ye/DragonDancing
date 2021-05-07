@@ -30,7 +30,7 @@ struct ExhibitionDetailView: View {
                 Image("color_toggle")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 150)
+                    .frame(width: 90, height: 90)
                     .onTapGesture {
                         showColor.toggle()
                     },

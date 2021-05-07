@@ -12,8 +12,8 @@ struct DotSlider: View {
     var showLine: Bool = true
     @Binding var value: Int
     private let spacing: CGFloat = 80
-    private let inactiveRadius:CGFloat = 20
-    private let activeRadius:CGFloat = 30
+    private let inactiveRadius:CGFloat = 13
+    private let activeRadius:CGFloat = 20
 
     var body: some View {
         HStack(spacing: spacing) {

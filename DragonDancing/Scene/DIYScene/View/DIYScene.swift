@@ -35,6 +35,7 @@ struct DIYScene: View {
                     .padding()
             }
             .padding(.leading, 100)
+            .padding(.trailing, 100)
 
             HStack {
                 VStack {
@@ -42,19 +43,20 @@ struct DIYScene: View {
                         Image(model.organs[index].name)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 100)
+                            .frame(height: 80)
                             .onTapGesture {
                                 model.activeIndex = index
                             }
                     }
                 }
                 Divider()
+                    .padding(.horizontal, 30)
                 VStack {
                     ForEach(model.organs.indices) { index in
                         HStack(spacing: 30) {
                             ForEach(model.colors, id: \.self) { color in
                                 color.clipShape(Circle())
-                                    .frame(height: 100)
+                                    .frame(height: 80)
                                     .frame(maxWidth: 36)
                                     .onTapGesture {
                                         model.organs[index].color = color
@@ -67,6 +69,7 @@ struct DIYScene: View {
                         .opacity(index == model.activeIndex ? 1 : 0)
                     }
                 }
+                .padding(.leading, 30)
             }
             .frame(height: 600)
         }

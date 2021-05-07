@@ -16,7 +16,7 @@ struct DIYMenu: View {
             Image(systemName: "square.and.arrow.up")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
+                .frame(width: 55, height: 55)
                 .foregroundColor(.accentColor)
                 .onTapGesture {
                     model.showShareSheet.toggle()
@@ -25,17 +25,17 @@ struct DIYMenu: View {
             Image(systemName: "arrow.counterclockwise.circle")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
+                .frame(width: 55, height: 55)
                 .foregroundColor(.accentColor)
                 .onTapGesture {
                     model.organs = .all
                     model.activeIndex = 0
                 }
             Spacer()
-            Image(systemName: "return")
+            Image("return")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
+                .frame(width: 55, height: 55)
                 .foregroundColor(.accentColor)
                 .onTapGesture {
                     world.currentTab = .home
@@ -48,5 +48,6 @@ struct DIYMenu: View {
 struct DIYMenu_Previews: PreviewProvider {
     static var previews: some View {
         DIYMenu()
+            .previewLayout(.sizeThatFits)
     }
 }
