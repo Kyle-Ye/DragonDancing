@@ -11,7 +11,7 @@ struct DotSlider: View {
     var number: Int = 3
     var showLine: Bool = true
     @Binding var value: Int
-    private let spacing: CGFloat = 80
+    var spacing: CGFloat = 80
     private let inactiveRadius:CGFloat = 13
     private let activeRadius:CGFloat = 20
 

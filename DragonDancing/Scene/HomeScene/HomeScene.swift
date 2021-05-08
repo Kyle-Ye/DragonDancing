@@ -21,24 +21,30 @@ struct HomeScene: View {
             }
         }.overlay(
             HStack(spacing: 80) {
-                Label("文创", systemImage: "pencil.circle")
-                    .font(.title)
-                    .onTapGesture {
-                        world.showMenu = false
-                        world.currentTab = .culture
+
+                Label(
+                    title: { Text("文创") },
+                    icon: {
+                        Image("文创")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 80)
                     }
-                Label("DIY", systemImage: "pencil.circle")
-                    .font(.title)
-                    .onTapGesture {
-                        world.showMenu = false
-                        world.currentTab = .diy
+                ).onTapGesture {
+                    world.currentTab = .culture
+                }
+                Label(
+                    title: { Text("DIY") },
+                    icon: {
+                        Image("DIY总开关")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 80)
                     }
-                Label("印章", systemImage: "pencil.circle")
-                    .font(.title)
-                    .onTapGesture {
-                        world.showMenu = false
-                        world.currentTab = .seal
-                    }
+                ).onTapGesture {
+                    world.showMenu = false
+                    world.currentTab = .diy
+                }
             }.labelStyle(VerticalLabelStyle()),
             alignment: .bottomTrailing
         )
@@ -60,11 +66,12 @@ struct MainView_Previews: PreviewProvider {
     }
 }
 
-struct VerticalLabelStyle: LabelStyle {
+struct VerticalLabelStyle: LabelStyle{
     func makeBody(configuration: Configuration) -> some View {
         VStack {
             configuration.icon
             configuration.title
+                .font(.title)
         }
     }
 }

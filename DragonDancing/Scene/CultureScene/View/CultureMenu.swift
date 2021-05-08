@@ -13,13 +13,13 @@ struct CultureMenu: View {
     var body: some View {
         VStack {
             Spacer()
-            Image(systemName: "return")
+            Image("return")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
                 .foregroundColor(.accentColor)
                 .onTapGesture {
-                    world.currentTab = .culture
+                    world.currentTab = .home
                     world.menu = nil
                 }
         }

@@ -13,9 +13,9 @@ struct Culture {
 
 extension Array where Element == Culture{
     static let all = [
-        Culture(name: "mouse"),
-        Culture(name: "mouse"),
-        Culture(name: "mouse"),
-        Culture(name: "mouse"),        
+        Culture(name: "道具"),
+        Culture(name: "日历"),
+        Culture(name: "红白扇子"),
+        Culture(name: "表情包贴图"),        
     ]
 }

@@ -16,7 +16,6 @@ struct ContentView: View {
                 if world.showMenu {
                     NavigationMenu()
                     Divider()
-                    Spacer()
                 }
                 switch world.currentTab {
                 case .home:

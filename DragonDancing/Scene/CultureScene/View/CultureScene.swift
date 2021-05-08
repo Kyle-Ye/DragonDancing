@@ -8,32 +8,39 @@
 import SwiftUI
 
 struct CultureScene: View {
+    @EnvironmentObject var world: NavigationWorld
+
     let cultures: [Culture] = .all
-    @State var pageNumber = 0
+    @State private var pageNumber = 0
     var body: some View {
         HStack {
-            VStack {
+            VStack(spacing: 50) {
                 TabView(selection: $pageNumber) {
-                    HStack {
-                        CultureView(culture: cultures[0])
-                        CultureView(culture: cultures[1])
+                    ForEach(0 ..< cultures.count / 2) { index in
+                        HStack(spacing: 100) {
+                            CultureView(culture: cultures[index * 2])
+                            CultureView(culture: cultures[index * 2 + 1])
+                        }
+                        .tag(index)
                     }
-                    .tag(0)
-                    HStack {
-                        CultureView(culture: cultures[2])
-                        CultureView(culture: cultures[3])
-                    }
-                    .tag(1)
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                DotSlider(number: 2, showLine: false, value: $pageNumber)
+                DotSlider(number: cultures.count / 2, showLine: false, value: $pageNumber)
             }
+            .padding(.vertical, 150)
             VStack {
-                VerticalText(text: "文创周边")
-                    .font(.title)
+                Text("文创周边")
+                    .font(.system(size: 60).bold())
                     .foregroundColor(.titleText)
+                    .frame(width: 70)
+                    .padding(20)
                 Spacer()
             }
+        }
+        .padding(.leading, 150)
+        .padding(.trailing, 80)
+        .onAppear {
+            world.menu = AnyView(CultureMenu())
         }
     }
 }

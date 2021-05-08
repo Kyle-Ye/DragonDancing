@@ -10,10 +10,11 @@ import SwiftUI
 struct CultureView: View {
     let culture: Culture
     var body: some View {
-        Image("mouse")
+        Image(culture.name)
             .resizable()
-            .frame(idealHeight: 500)
-            .padding()
+            .aspectRatio(contentMode: .fit)
+            .frame(idealHeight: 300)
+            .padding(50)
             .border(Color.titleText)
     }
 }
