@@ -30,7 +30,7 @@ struct CultureScene: View {
             .padding(.vertical, 150)
             VStack {
                 Text("文创周边")
-                    .font(.system(size: 60).bold())
+                    .font(Font.custom("nansongshuju", size: 60).bold())
                     .foregroundColor(.titleText)
                     .frame(width: 70)
                     .padding(20)

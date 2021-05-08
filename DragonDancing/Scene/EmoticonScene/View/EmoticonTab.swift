@@ -15,7 +15,7 @@ struct EmoticonTab: View {
         HStack(alignment: .top, spacing: 50) {
             VStack(alignment: .leading, spacing: 113) {
                 Text(emoticons[selection].name)
-                    .font(.largeTitle)
+                    .font(Font.custom("nansongshuju", size: 40))
                     .foregroundColor(.titleText)
                     .padding(.vertical, 25)
                     .padding(.horizontal, 5)
@@ -25,8 +25,8 @@ struct EmoticonTab: View {
                     )
                     .padding()
                 Text(emoticons[selection].description)
-                    .foregroundColor(Color("body_text"))
-                    .font(.title)
+                    .font(Font.custom("nansongshuju", size: 30))
+                    .foregroundColor(.bodyText)
                     .frame(width: 250)
                     .padding(.leading, 100)
             }

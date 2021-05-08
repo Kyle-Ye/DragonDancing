@@ -39,7 +39,7 @@ struct ExhibitionDetailView: View {
 
             HStack(alignment: .top) {
                 VerticalText(text: exhibition.name)
-                    .font(.title2.bold())
+                    .font(Font.custom("nansongshuju", size: 25).bold())
                     .foregroundColor(.titleText)
                     .padding()
                     .background(
@@ -48,6 +48,7 @@ struct ExhibitionDetailView: View {
                     )
                     .padding(.horizontal, 50)
                 VerticalText(text: exhibition.description)
+                    .font(Font.custom("nansongshuju", size: 20))
                     .padding(.top, 80)
                     .padding(.trailing, 100)
             }

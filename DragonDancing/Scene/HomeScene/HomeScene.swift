@@ -21,9 +21,8 @@ struct HomeScene: View {
             }
         }.overlay(
             HStack(spacing: 80) {
-
                 Label(
-                    title: { Text("文创") },
+                    title: { Text("文创").font(Font.custom("nansongshuju", size: 20))},
                     icon: {
                         Image("文创")
                             .resizable()
@@ -34,7 +33,7 @@ struct HomeScene: View {
                     world.currentTab = .culture
                 }
                 Label(
-                    title: { Text("DIY") },
+                    title: { Text("DIY").font(Font.custom("nansongshuju", size: 20)) },
                     icon: {
                         Image("DIY总开关")
                             .resizable()
@@ -44,7 +43,10 @@ struct HomeScene: View {
                 ).onTapGesture {
                     world.currentTab = .diy
                 }
-            }.labelStyle(VerticalLabelStyle()),
+            }
+            .labelStyle(VerticalLabelStyle())
+            .padding(.trailing, 100)
+            ,
             alignment: .bottomTrailing
         )
     }

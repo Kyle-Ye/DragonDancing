@@ -18,7 +18,7 @@ struct VerticalText: View {
         HStack(alignment: .top) {
             ForEach(lines, id: \.self) { line in
                 Text(line)
-                    .frame(width: 20)
+                    .frame(width: 30)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 30)
             }

@@ -27,7 +27,7 @@ struct ExhibitionScene: View {
                 ExhibitionTab(exhibitions: exhibitions(for: exhibitionWorld.currentTab))
                     .overlay(
                         Text(title(for: exhibitionWorld.currentTab))
-                            .font(.largeTitle.bold())
+                            .font(Font.custom("nansongshuju", size: 40).bold())
                             .foregroundColor(.titleText)
                             .padding(40)
                             .background(

@@ -77,7 +77,7 @@ struct LionDetailView: View {
 
             HStack(alignment: .top) {
                 VerticalText(text: lion.name)
-                    .font(.title2.bold())
+                    .font(Font.custom("nansongshuju", size: 25).bold())
                     .foregroundColor(.titleText)
                     .padding()
                     .background(
@@ -86,6 +86,7 @@ struct LionDetailView: View {
                     )
                     .padding(.horizontal, 50)
                 VerticalText(text: lion.description)
+                    .font(Font.custom("nansongshuju", size: 20))
                     .padding(.top, 80)
                     .padding(.trailing, 100)
             }

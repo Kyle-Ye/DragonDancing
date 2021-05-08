@@ -18,7 +18,7 @@ struct ExhibitionView: View {
             .aspectRatio(contentMode: .fit)
             .overlay(
                 VerticalText(text: exhibition.name)
-                    .font(.title2.bold())
+                    .font(Font.custom("nansongshuju", size: 20).bold())
                     .foregroundColor(.titleText)
                     .offset(exhibition.nameOffset),
                 alignment: .center)

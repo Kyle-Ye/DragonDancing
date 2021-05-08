@@ -15,6 +15,10 @@
 		274B32FE263E460200E077C6 /* ActionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FD263E460200E077C6 /* ActionScene.swift */; };
 		274B3300263E463200E077C6 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FF263E463200E077C6 /* Action.swift */; };
 		274B3302263E468D00E077C6 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3301263E468D00E077C6 /* ActionView.swift */; };
+		276848BF26467F8B00A9756F /* MeetingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276848BE26467F8B00A9756F /* MeetingScene.swift */; };
+		276848C22646816A00A9756F /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276848C12646816A00A9756F /* Province.swift */; };
+		276848C42646817700A9756F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276848C32646817700A9756F /* City.swift */; };
+		276848C62646D6D700A9756F /* 南宋书局体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 276848C52646D6D700A9756F /* 南宋书局体.TTF */; };
 		2795D4992639388E00DB2350 /* DotSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795D4982639388E00DB2350 /* DotSlider.swift */; };
 		2795D4B626394F4C00DB2350 /* EmoticonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795D4B526394F4C00DB2350 /* EmoticonScene.swift */; };
 		27A00DB4262F1776001FF431 /* DragonDancingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A00DB3262F1776001FF431 /* DragonDancingApp.swift */; };
@@ -34,7 +38,6 @@
 		27CB559326437F0F009658DE /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB559226437F0F009658DE /* Culture.swift */; };
 		27CB559526437F18009658DE /* CultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB559426437F18009658DE /* CultureView.swift */; };
 		27DDCFDB263D51B9008E36A2 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDA263D51B9008E36A2 /* Emoticon.swift */; };
-		27DDCFDE263D5299008E36A2 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDD263D5299008E36A2 /* EmoticonView.swift */; };
 		27DDCFE2263D841F008E36A2 /* snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFE1263D841F008E36A2 /* snapshot.swift */; };
 		27E5BCDC263FEA13004C6C64 /* ExhibitionTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCD6263FEA13004C6C64 /* ExhibitionTab.swift */; };
 		27E5BCDD263FEA13004C6C64 /* ExhibitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCD8263FEA13004C6C64 /* ExhibitionView.swift */; };
@@ -44,7 +47,6 @@
 		27E5BCE4263FEA7C004C6C64 /* ExhibitionWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCE3263FEA7C004C6C64 /* ExhibitionWorld.swift */; };
 		27E5BCE6263FEF76004C6C64 /* ExhibitionDetailMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCE5263FEF76004C6C64 /* ExhibitionDetailMenu.swift */; };
 		27E5BCEC2640082A004C6C64 /* EmoticonWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCEB2640082A004C6C64 /* EmoticonWorld.swift */; };
-		27E5BCEE26400AEF004C6C64 /* EmoticonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCED26400AEF004C6C64 /* EmoticonDetailView.swift */; };
 		27E5BCF026400BD6004C6C64 /* EmoticonTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCEF26400BD6004C6C64 /* EmoticonTab.swift */; };
 		27E5BCF226400DD3004C6C64 /* CustomScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5BCF126400DD3004C6C64 /* CustomScale.swift */; };
 		27E5BCF926402D13004C6C64 /* 跳高台.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27E5BCF826402D13004C6C64 /* 跳高台.gif */; };
@@ -73,6 +75,10 @@
 		274B32FD263E460200E077C6 /* ActionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionScene.swift; sourceTree = "<group>"; };
 		274B32FF263E463200E077C6 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		274B3301263E468D00E077C6 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		276848BE26467F8B00A9756F /* MeetingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingScene.swift; sourceTree = "<group>"; };
+		276848C12646816A00A9756F /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		276848C32646817700A9756F /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		276848C52646D6D700A9756F /* 南宋书局体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "南宋书局体.TTF"; sourceTree = "<group>"; };
 		2795D4982639388E00DB2350 /* DotSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSlider.swift; sourceTree = "<group>"; };
 		2795D4B526394F4C00DB2350 /* EmoticonScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonScene.swift; sourceTree = "<group>"; };
 		27A00DB0262F1776001FF431 /* DragonDancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonDancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +100,6 @@
 		27CB559226437F0F009658DE /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
 		27CB559426437F18009658DE /* CultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureView.swift; sourceTree = "<group>"; };
 		27DDCFDA263D51B9008E36A2 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
-		27DDCFDD263D5299008E36A2 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		27DDCFE1263D841F008E36A2 /* snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapshot.swift; sourceTree = "<group>"; };
 		27E5BCD6263FEA13004C6C64 /* ExhibitionTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitionTab.swift; sourceTree = "<group>"; };
 		27E5BCD8263FEA13004C6C64 /* ExhibitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitionView.swift; sourceTree = "<group>"; };
@@ -104,7 +109,6 @@
 		27E5BCE3263FEA7C004C6C64 /* ExhibitionWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionWorld.swift; sourceTree = "<group>"; };
 		27E5BCE5263FEF76004C6C64 /* ExhibitionDetailMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailMenu.swift; sourceTree = "<group>"; };
 		27E5BCEB2640082A004C6C64 /* EmoticonWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonWorld.swift; sourceTree = "<group>"; };
-		27E5BCED26400AEF004C6C64 /* EmoticonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonDetailView.swift; sourceTree = "<group>"; };
 		27E5BCEF26400BD6004C6C64 /* EmoticonTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonTab.swift; sourceTree = "<group>"; };
 		27E5BCF126400DD3004C6C64 /* CustomScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScale.swift; sourceTree = "<group>"; };
 		27E5BCF826402D13004C6C64 /* 跳高台.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "跳高台.gif"; sourceTree = "<group>"; };
@@ -141,9 +145,28 @@
 			isa = PBXGroup;
 			children = (
 				27A00DB7262F1776001FF431 /* Assets.xcassets */,
+				276848C52646D6D700A9756F /* 南宋书局体.TTF */,
 				27E92463263FA99100ADBB81 /* Action */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		276848BD26467F7800A9756F /* MeetingScene */ = {
+			isa = PBXGroup;
+			children = (
+				276848C02646815E00A9756F /* Model */,
+				276848BE26467F8B00A9756F /* MeetingScene.swift */,
+			);
+			path = MeetingScene;
+			sourceTree = "<group>";
+		};
+		276848C02646815E00A9756F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				276848C12646816A00A9756F /* Province.swift */,
+				276848C32646817700A9756F /* City.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		27A00DA7262F1776001FF431 = {
@@ -328,21 +351,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		27E5BCE9264007BA004C6C64 /* ModelView */ = {
-			isa = PBXGroup;
-			children = (
-				27DDCFDD263D5299008E36A2 /* EmoticonView.swift */,
-				27E5BCED26400AEF004C6C64 /* EmoticonDetailView.swift */,
-			);
-			path = ModelView;
-			sourceTree = "<group>";
-		};
 		27E5BCEA2640080A004C6C64 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2795D4B526394F4C00DB2350 /* EmoticonScene.swift */,
 				27E5BCEF26400BD6004C6C64 /* EmoticonTab.swift */,
-				27E5BCE9264007BA004C6C64 /* ModelView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -438,6 +451,7 @@
 			children = (
 				27E5BD0226402E2F004C6C64 /* Navigation */,
 				27E5BCF62640287F004C6C64 /* HomeScene */,
+				276848BD26467F7800A9756F /* MeetingScene */,
 				27E5BCF32640282E004C6C64 /* ActionScene */,
 				27E5BCE7263FFB14004C6C64 /* EmoticonScene */,
 				27E5BCD5263FEA13004C6C64 /* ExhibitionScene */,
@@ -511,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276848C62646D6D700A9756F /* 南宋书局体.TTF in Resources */,
 				27E5BCFF26402D32004C6C64 /* 踩大球.gif in Resources */,
 				27E5BCFD26402D28004C6C64 /* 梅花桩.gif in Resources */,
 				27E5BCF926402D13004C6C64 /* 跳高台.gif in Resources */,
@@ -537,6 +552,7 @@
 				2723F34F263E913000AD303E /* Tool.swift in Sources */,
 				274B3300263E463200E077C6 /* Action.swift in Sources */,
 				27CB559526437F18009658DE /* CultureView.swift in Sources */,
+				276848C22646816A00A9756F /* Province.swift in Sources */,
 				27E5BCDE263FEA13004C6C64 /* ExhibitionDetailView.swift in Sources */,
 				27CB558F26437987009658DE /* SealScene.swift in Sources */,
 				27F4E0CE26424ADD00BB0380 /* DIYWorld.swift in Sources */,
@@ -553,6 +569,7 @@
 				274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */,
 				27E5BCDF263FEA13004C6C64 /* ExhibitionScene.swift in Sources */,
 				27BA229B26463091007A2B9C /* SealTab.swift in Sources */,
+				276848C42646817700A9756F /* City.swift in Sources */,
 				274B3302263E468D00E077C6 /* ActionView.swift in Sources */,
 				27CB5591264379E1009658DE /* SealMenu.swift in Sources */,
 				27E5BCE0263FEA13004C6C64 /* ExhibitionMenu.swift in Sources */,
@@ -560,8 +577,8 @@
 				27E5BD0626403225004C6C64 /* NavigationWorld.swift in Sources */,
 				27DDCFDB263D51B9008E36A2 /* Emoticon.swift in Sources */,
 				27E5BD042640306D004C6C64 /* NavigationMenu.swift in Sources */,
+				276848BF26467F8B00A9756F /* MeetingScene.swift in Sources */,
 				27F4E0D126427C3E00BB0380 /* OrgansView.swift in Sources */,
-				27E5BCEE26400AEF004C6C64 /* EmoticonDetailView.swift in Sources */,
 				2795D4992639388E00DB2350 /* DotSlider.swift in Sources */,
 				2795D4B626394F4C00DB2350 /* EmoticonScene.swift in Sources */,
 				27E5BCDD263FEA13004C6C64 /* ExhibitionView.swift in Sources */,
@@ -571,7 +588,6 @@
 				27BA229926463080007A2B9C /* OrganTab.swift in Sources */,
 				27E92462263F92C900ADBB81 /* Exhibition.swift in Sources */,
 				274B32FE263E460200E077C6 /* ActionScene.swift in Sources */,
-				27DDCFDE263D5299008E36A2 /* EmoticonView.swift in Sources */,
 				27DDCFE2263D841F008E36A2 /* snapshot.swift in Sources */,
 				27F4E0D326428C8B00BB0380 /* ShareView.swift in Sources */,
 				27CB558B26437928009658DE /* CultureScene.swift in Sources */,
