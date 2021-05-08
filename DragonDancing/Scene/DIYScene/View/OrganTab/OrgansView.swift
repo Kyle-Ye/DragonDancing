@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct OrgansView: View {
-    let organs:[Organ]
-    
+    @EnvironmentObject var model: DIYWorld
+    let organs: [Organ]
+
     var body: some View {
         ZStack {
             ForEach(organs, id: \.name) { organ in
@@ -19,6 +20,18 @@ struct OrgansView: View {
                     .foregroundColor(organ.color)
             }
         }
+        .animation(.spring())
+        .contextMenu {
+            Button(action: {
+                model.showShareSheet.toggle()
+            }) {
+                Text("分享")
+                Image(systemName: "square.and.arrow.up")
+            }
+        }
+        .sheet(isPresented: $model.showShareSheet, content: {
+            ActivityView(image: model.getOrgansImage())
+        })
     }
 }
 

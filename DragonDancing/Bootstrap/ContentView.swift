@@ -46,7 +46,7 @@ struct ContentView: View {
                             world.showMenu.toggle()
                         }
                         .padding(.top, 80)
-                        .padding(.leading, 35)
+                        .padding(.leading, 15)
                     Spacer()
                 }
                 Spacer()

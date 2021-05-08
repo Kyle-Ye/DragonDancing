@@ -15,7 +15,7 @@ struct NavigationMenu: View {
         }
         .padding(.top, 190)
         .padding(.vertical, 100)
-        .padding(.horizontal, 50)
+        .padding(.horizontal, 30)
     }
 
     func mainMenu() -> AnyView {

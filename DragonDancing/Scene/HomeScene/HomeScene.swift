@@ -42,7 +42,6 @@ struct HomeScene: View {
                             .frame(width: 80)
                     }
                 ).onTapGesture {
-                    world.showMenu = false
                     world.currentTab = .diy
                 }
             }.labelStyle(VerticalLabelStyle()),

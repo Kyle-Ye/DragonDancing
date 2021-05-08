@@ -11,6 +11,7 @@ class DIYWorld: ObservableObject {
     @Published var organs: [Organ] = .all
     @Published var activeIndex = 0
     @Published var showShareSheet = false
+    @Published var currentTab: Int = 0
 
     public let colors: [Color] = [
          Color(red: 0.09, green: 0.27, blue: 0.52),

@@ -13,33 +13,29 @@ struct DIYMenu: View {
     @State var showShareSheet = false
     var body: some View {
         VStack {
-            Image(systemName: "square.and.arrow.up")
+            Image("DIY狮头\(model.currentTab == 0 ? "2" : "")")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 55, height: 55)
-                .foregroundColor(.accentColor)
+                .frame(width: 80, height: 80)
                 .onTapGesture {
-                    model.showShareSheet.toggle()
+                    model.currentTab = 0
                 }
             Spacer()
-            Image(systemName: "arrow.counterclockwise.circle")
+            Image("印章\(model.currentTab == 1 ? "2" : "")")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 55, height: 55)
-                .foregroundColor(.accentColor)
+                .frame(width: 80, height: 80)
                 .onTapGesture {
-                    model.organs = .all
-                    model.activeIndex = 0
+                    model.currentTab = 1
                 }
             Spacer()
             Image("return")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 55, height: 55)
-                .foregroundColor(.accentColor)
+                .frame(width: 80, height: 80)
                 .onTapGesture {
-                    world.currentTab = .home
                     world.menu = nil
+                    world.currentTab = .home
                 }
         }
     }
