@@ -12,7 +12,7 @@ struct ExhibitionMenu: View {
     @EnvironmentObject var exhibitionWorld: ExhibitionWolrd
     var body: some View {
         VStack {
-            Image("instrument_tab")
+            Image("instrument_tab\(exhibitionWorld.currentTab == 0 ? "2" : "")")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
@@ -20,7 +20,7 @@ struct ExhibitionMenu: View {
                     exhibitionWorld.currentTab = 0
                 }
             Spacer()
-            Image("tool_tab")
+            Image("tool_tab\(exhibitionWorld.currentTab == 1 ? "2" : "")")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
@@ -28,7 +28,7 @@ struct ExhibitionMenu: View {
                     exhibitionWorld.currentTab = 1
                 }
             Spacer()
-            Image("lion_tab")
+            Image("lion_tab\(exhibitionWorld.currentTab == 2 ? "2" : "")")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)

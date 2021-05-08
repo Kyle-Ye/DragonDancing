@@ -12,6 +12,7 @@ struct ExhibitionDetailMenu: View {
 
     var body: some View {
         VStack {
+            Spacer()
             if let instrument = exhibitionWorld.exhibitionDetail as? Instrument {
                 Image("nav_play")
                     .resizable()
@@ -27,7 +28,6 @@ struct ExhibitionDetailMenu: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
                 .onTapGesture {
-                    
                     exhibitionWorld.exhibitionDetail = nil
                 }
         }

@@ -21,7 +21,7 @@ struct NavigationMenu: View {
     func mainMenu() -> AnyView {
         AnyView(
             VStack {
-                Image("meeting")
+                Image("meeting\(world.currentTab == .home ? "2": "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)
@@ -29,7 +29,7 @@ struct NavigationMenu: View {
                         world.currentTab = .home
                     }
                 Spacer()
-                Image("action")
+                Image("action\(world.currentTab == .action ? "2": "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)
@@ -37,7 +37,7 @@ struct NavigationMenu: View {
                         world.currentTab = .action
                     }
                 Spacer()
-                Image("emoticon")
+                Image("emoticon\(world.currentTab == .emotion ? "2": "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)
@@ -45,7 +45,7 @@ struct NavigationMenu: View {
                         world.currentTab = .emotion
                     }
                 Spacer()
-                Image("exhibition")
+                Image("exhibition\(world.currentTab == .exhibition ? "2": "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)

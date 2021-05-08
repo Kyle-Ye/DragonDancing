@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct SealTab: View {
+    @EnvironmentObject var model: DIYWorld
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                Text("Hello, World!")
+                    .border(Color.accentColor, width: 6)
+                ForEach(model.backgroundSeals, id: \.self) { seal in
+                    Image(seal)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80)
+                }
+            }
+        }
     }
 }
 
 struct SealTab_Previews: PreviewProvider {
     static var previews: some View {
         SealTab()
+            .environmentObject(DIYWorld())
     }
 }

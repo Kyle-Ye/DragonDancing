@@ -13,10 +13,16 @@ struct ExhibitionScene: View {
     var body: some View {
         ZStack {
             if let exhibitionDetail = exhibitionWorld.exhibitionDetail {
-                ExhibitionDetailView(exhibition: exhibitionDetail)
-                    .onAppear {
-                        world.menu = AnyView(ExhibitionDetailMenu().environmentObject(exhibitionWorld))
+                Group {
+                    if let lion = exhibitionDetail as? Lion {
+                        LionDetailView(lion: lion)
+                    } else {
+                        ExhibitionDetailView(exhibition: exhibitionDetail)
                     }
+                }
+                .onAppear {
+                    world.menu = AnyView(ExhibitionDetailMenu().environmentObject(exhibitionWorld))
+                }
             } else {
                 ExhibitionTab(exhibitions: exhibitions(for: exhibitionWorld.currentTab))
                     .overlay(
