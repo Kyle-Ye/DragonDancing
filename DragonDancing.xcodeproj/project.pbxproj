@@ -222,9 +222,9 @@
 				27FA47A426390AC50041E79A /* Colors.swift */,
 				2795D4982639388E00DB2350 /* DotSlider.swift */,
 				27DDCFE1263D841F008E36A2 /* snapshot.swift */,
+				27F4E0D226428C8B00BB0380 /* ShareView.swift */,
 				274B32F4263E391100E077C6 /* GIFImage.swift */,
 				27E5BCF126400DD3004C6C64 /* CustomScale.swift */,
-				27F4E0D226428C8B00BB0380 /* ShareView.swift */,
 			);
 			path = UtilView;
 			sourceTree = "<group>";

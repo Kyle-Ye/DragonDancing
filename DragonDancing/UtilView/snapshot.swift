@@ -17,10 +17,12 @@ extension View {
             controller.view.backgroundColor = .clear
 
             let renderer = UIGraphicsImageRenderer(size: targetSize)
-            let image = renderer.image { _ in
-                view?.drawHierarchy(in: controller.view.bounds, afterScreenUpdates: true)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                let image = renderer.image { _ in
+                    view?.drawHierarchy(in: controller.view.bounds, afterScreenUpdates: true)
+                }
+                completion(image)
             }
-            completion(image)
         }
         return self
     }

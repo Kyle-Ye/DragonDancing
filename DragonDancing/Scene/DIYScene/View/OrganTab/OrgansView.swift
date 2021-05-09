@@ -21,16 +21,21 @@ struct OrgansView: View {
             }
         }
         .animation(.spring())
+        .snapshot(model.captureImage, completion: { image in
+            model.captureImage.toggle()
+            model.shareImage = image
+            model.showShareSheet = true
+        })
         .contextMenu {
             Button(action: {
-                model.showShareSheet.toggle()
+                model.captureImage.toggle()
             }) {
                 Text("分享")
                 Image(systemName: "square.and.arrow.up")
             }
         }
         .sheet(isPresented: $model.showShareSheet, content: {
-            ActivityView(image: model.getOrgansImage())
+            ActivityView(image: model.shareImage!,title: "DIY狮头")
         })
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 class OrganWorld: ObservableObject {
     @Published var showShareSheet = false
+    @Published var captureImage = false
+    @Published var shareImage: UIImage?
     @Published var organs: [Organ] = .all
     @Published var activeIndex = 0
 

@@ -13,10 +13,11 @@ struct ActivityView: UIViewControllerRepresentable {
     }
 
     var image: UIImage
+    var title: String?
     var excludedActivityTypes: [UIActivity.ActivityType]? = nil
 
     func makeUIViewController(context: Context) -> UIActivityViewController {
-        let source = Source(image: image)
+        let source = Source(image: image, title: title)
         let controller = UIActivityViewController(activityItems: [source],
                                                   applicationActivities: nil)
         return controller
@@ -25,8 +26,10 @@ struct ActivityView: UIViewControllerRepresentable {
 
 class Source: NSObject {
     var shareImage: UIImage
-    init(image: UIImage) {
+    var imageTitle:String?
+    init(image: UIImage, title:String?) {
         shareImage = image
+        imageTitle = title
     }
 }
 
@@ -44,7 +47,7 @@ extension Source: UIActivityItemSource {
         let imageProvider = NSItemProvider(object: image)
         let metadata = LPLinkMetadata()
         metadata.imageProvider = imageProvider
-        metadata.title = "DIY狮头"
+        metadata.title = imageTitle
         return metadata
     }
 }

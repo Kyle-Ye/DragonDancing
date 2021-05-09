@@ -29,7 +29,7 @@ struct OrganTab: View {
                         .frame(width: 55, height: 55)
                         .foregroundColor(.accentColor)
                         .onTapGesture {
-                            model.showShareSheet.toggle()
+                            model.captureImage.toggle()
                         }
                     Image("重置")
                         .resizable()

@@ -54,7 +54,7 @@ struct SealTab: View {
                     }
                 }
                 .sheet(isPresented: $model.showShareSheet){
-                    ActivityView(image: model.shareImage!)
+                    ActivityView(image: model.shareImage!,title: "DIY印章")
                 }
                 .padding(.top, 80)
                 .padding(.horizontal, 30)
