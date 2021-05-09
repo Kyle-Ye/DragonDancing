@@ -21,7 +21,7 @@ struct NavigationMenu: View {
     func mainMenu() -> AnyView {
         AnyView(
             VStack {
-                Image("meeting\(world.currentTab == .home ? "2" : "")")
+                Image("房子\(world.currentTab == .home ? "2" : "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)

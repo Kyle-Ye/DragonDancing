@@ -22,6 +22,8 @@
 		27372C502647E0EE003FE13F /* loading.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C482647E0ED003FE13F /* loading.sks */; };
 		27372C512647E0EE003FE13F /* instrumentRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C492647E0ED003FE13F /* instrumentRoom.sks */; };
 		27372C522647E0EE003FE13F /* bookRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C4A2647E0ED003FE13F /* bookRoom.sks */; };
+		27372C5526482405003FE13F /* gameoverRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C5426482405003FE13F /* gameoverRoom.sks */; };
+		27372C7B2648277A003FE13F /* meeting.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27372C7A2648277A003FE13F /* meeting.mp4 */; };
 		274B32F3263E376A00E077C6 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 274B32F2263E376A00E077C6 /* SwiftyGif */; };
 		274B32F5263E391100E077C6 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F4263E391100E077C6 /* GIFImage.swift */; };
 		274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F9263E3D8D00E077C6 /* DIYScene.swift */; };
@@ -96,6 +98,8 @@
 		27372C482647E0ED003FE13F /* loading.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = loading.sks; sourceTree = "<group>"; };
 		27372C492647E0ED003FE13F /* instrumentRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = instrumentRoom.sks; sourceTree = "<group>"; };
 		27372C4A2647E0ED003FE13F /* bookRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bookRoom.sks; sourceTree = "<group>"; };
+		27372C5426482405003FE13F /* gameoverRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = gameoverRoom.sks; sourceTree = "<group>"; };
+		27372C7A2648277A003FE13F /* meeting.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = meeting.mp4; sourceTree = "<group>"; };
 		274B32F4263E391100E077C6 /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		274B32F9263E3D8D00E077C6 /* DIYScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYScene.swift; sourceTree = "<group>"; };
 		274B32FD263E460200E077C6 /* ActionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionScene.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				27372C482647E0ED003FE13F /* loading.sks */,
 				27372C492647E0ED003FE13F /* instrumentRoom.sks */,
 				27372C4A2647E0ED003FE13F /* bookRoom.sks */,
+				27372C5426482405003FE13F /* gameoverRoom.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			children = (
 				27A00DB7262F1776001FF431 /* Assets.xcassets */,
 				276848C52646D6D700A9756F /* 南宋书局体.TTF */,
+				27372C7A2648277A003FE13F /* meeting.mp4 */,
 				27E92463263FA99100ADBB81 /* Action */,
 			);
 			path = Resource;
@@ -575,7 +581,9 @@
 				27372C502647E0EE003FE13F /* loading.sks in Resources */,
 				27372C512647E0EE003FE13F /* instrumentRoom.sks in Resources */,
 				27372C4F2647E0EE003FE13F /* playgroundRoom.sks in Resources */,
+				27372C7B2648277A003FE13F /* meeting.mp4 in Resources */,
 				276848C62646D6D700A9756F /* 南宋书局体.TTF in Resources */,
+				27372C5526482405003FE13F /* gameoverRoom.sks in Resources */,
 				27E5BCFF26402D32004C6C64 /* 踩大球.gif in Resources */,
 				27E5BCFD26402D28004C6C64 /* 梅花桩.gif in Resources */,
 				27372C4D2647E0EE003FE13F /* introRoom.sks in Resources */,
