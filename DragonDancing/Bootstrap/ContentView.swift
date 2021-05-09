@@ -43,7 +43,9 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 110, height: 110)
                         .onTapGesture {
-                            world.showMenu.toggle()
+                            if world.currentTab != .home {
+                                world.showMenu.toggle()
+                            }
                         }
                         .padding(.top, 80)
                         .padding(.leading, 15)
@@ -60,5 +62,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }
