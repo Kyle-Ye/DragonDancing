@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OrganTab: View {
     @EnvironmentObject var world: NavigationWorld
-    @EnvironmentObject var model: DIYWorld
+    @EnvironmentObject var model: OrganWorld
 
     var body: some View {
         HStack {

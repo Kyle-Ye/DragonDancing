@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OrgansView: View {
-    @EnvironmentObject var model: DIYWorld
+    @EnvironmentObject var model: OrganWorld
     let organs: [Organ]
 
     var body: some View {

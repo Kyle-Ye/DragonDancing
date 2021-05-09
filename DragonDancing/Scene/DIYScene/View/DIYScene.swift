@@ -10,14 +10,18 @@ import SwiftUI
 struct DIYScene: View {
     @EnvironmentObject var world: NavigationWorld
     @StateObject var model = DIYWorld()
+    @StateObject var organ = OrganWorld()
+    @StateObject var seal = SealWorld()
 
     var body: some View {
         Group {
             switch model.currentTab {
             case 0:
                 OrganTab()
+                    .environmentObject(organ)
             case 1:
                 SealTab()
+                    .environmentObject(seal)
             default:
                 OrganTab()
             }
