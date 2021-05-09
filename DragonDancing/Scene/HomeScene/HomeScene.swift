@@ -17,17 +17,28 @@ struct HomeScene: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 600)
-//                Image("房子集合")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
                 ForEach(provinces, id: \.name) { province in
                     ForEach(province.citys, id: \.name) { city in
                         Image(city.name)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50)
-                            .position(x: CGFloat(city.x+10), y: CGFloat(city.y + 240))
-                            .opacity(selection == city ? 1.0 : 0.2)
+                            .overlay(
+                                ZStack {
+                                    Image("city_back")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 50)
+                                    Text(city.name)
+                                        .frame(width: 15)
+                                        .font(Font.custom("nansongshuju", size: 10))
+                                        .foregroundColor(.white)
+                                        .padding(.vertical, 10)
+                                }
+                                .offset(x: -30, y: -30)
+                            )
+                            .position(x: CGFloat(city.x + 10), y: CGFloat(city.y + 240))
+                            .opacity(selection == city ? 1.0 : 0.0)
                             .animation(.spring())
                     }
                 }

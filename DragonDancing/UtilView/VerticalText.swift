@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VerticalText: View {
     var text: String
+    var width: CGFloat = 30
 
     private var lines: [String] {
         text.split(separator: "\n").reversed().map { String($0) }
@@ -18,7 +19,7 @@ struct VerticalText: View {
         HStack(alignment: .top) {
             ForEach(lines, id: \.self) { line in
                 Text(line)
-                    .frame(width: 30)
+                    .frame(width: width)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 30)
             }
