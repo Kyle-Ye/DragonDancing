@@ -21,7 +21,7 @@ struct NavigationMenu: View {
     func mainMenu() -> AnyView {
         AnyView(
             VStack {
-                Image("meeting\(world.currentTab == .home ? "2": "")")
+                Image("meeting\(world.currentTab == .home ? "2" : "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)
@@ -29,7 +29,16 @@ struct NavigationMenu: View {
                         world.currentTab = .home
                     }
                 Spacer()
-                Image("action\(world.currentTab == .action ? "2": "")")
+                Image("meeting\(world.currentTab == .meeting ? "2" : "")")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 80, height: 80)
+                    .onTapGesture {
+                        world.showMenu = false
+                        world.currentTab = .meeting
+                    }
+                Spacer()
+                Image("action\(world.currentTab == .action ? "2" : "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)
@@ -37,7 +46,7 @@ struct NavigationMenu: View {
                         world.currentTab = .action
                     }
                 Spacer()
-                Image("emoticon\(world.currentTab == .emotion ? "2": "")")
+                Image("emoticon\(world.currentTab == .emotion ? "2" : "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)
@@ -45,7 +54,7 @@ struct NavigationMenu: View {
                         world.currentTab = .emotion
                     }
                 Spacer()
-                Image("exhibition\(world.currentTab == .exhibition ? "2": "")")
+                Image("exhibition\(world.currentTab == .exhibition ? "2" : "")")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 80, height: 80)

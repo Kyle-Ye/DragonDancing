@@ -14,6 +14,14 @@
 		2725DF52264786CE0010B703 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725DF50264786CE0010B703 /* Extensions.swift */; };
 		2725DF53264786CE0010B703 /* AnimatableSystemFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725DF51264786CE0010B703 /* AnimatableSystemFontModifier.swift */; };
 		2725DF55264786E90010B703 /* Seal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725DF54264786E90010B703 /* Seal.swift */; };
+		27372C4B2647E0EE003FE13F /* MeetingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372C422647E0ED003FE13F /* MeetingWorld.swift */; };
+		27372C4C2647E0EE003FE13F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372C432647E0ED003FE13F /* GameScene.swift */; };
+		27372C4D2647E0EE003FE13F /* introRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C452647E0ED003FE13F /* introRoom.sks */; };
+		27372C4E2647E0EE003FE13F /* meetingRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C462647E0ED003FE13F /* meetingRoom.sks */; };
+		27372C4F2647E0EE003FE13F /* playgroundRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C472647E0ED003FE13F /* playgroundRoom.sks */; };
+		27372C502647E0EE003FE13F /* loading.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C482647E0ED003FE13F /* loading.sks */; };
+		27372C512647E0EE003FE13F /* instrumentRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C492647E0ED003FE13F /* instrumentRoom.sks */; };
+		27372C522647E0EE003FE13F /* bookRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C4A2647E0ED003FE13F /* bookRoom.sks */; };
 		274B32F3263E376A00E077C6 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 274B32F2263E376A00E077C6 /* SwiftyGif */; };
 		274B32F5263E391100E077C6 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F4263E391100E077C6 /* GIFImage.swift */; };
 		274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F9263E3D8D00E077C6 /* DIYScene.swift */; };
@@ -80,6 +88,14 @@
 		2725DF50264786CE0010B703 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2725DF51264786CE0010B703 /* AnimatableSystemFontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSystemFontModifier.swift; sourceTree = "<group>"; };
 		2725DF54264786E90010B703 /* Seal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seal.swift; sourceTree = "<group>"; };
+		27372C422647E0ED003FE13F /* MeetingWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingWorld.swift; sourceTree = "<group>"; };
+		27372C432647E0ED003FE13F /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		27372C452647E0ED003FE13F /* introRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = introRoom.sks; sourceTree = "<group>"; };
+		27372C462647E0ED003FE13F /* meetingRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = meetingRoom.sks; sourceTree = "<group>"; };
+		27372C472647E0ED003FE13F /* playgroundRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = playgroundRoom.sks; sourceTree = "<group>"; };
+		27372C482647E0ED003FE13F /* loading.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = loading.sks; sourceTree = "<group>"; };
+		27372C492647E0ED003FE13F /* instrumentRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = instrumentRoom.sks; sourceTree = "<group>"; };
+		27372C4A2647E0ED003FE13F /* bookRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bookRoom.sks; sourceTree = "<group>"; };
 		274B32F4263E391100E077C6 /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		274B32F9263E3D8D00E077C6 /* DIYScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYScene.swift; sourceTree = "<group>"; };
 		274B32FD263E460200E077C6 /* ActionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionScene.swift; sourceTree = "<group>"; };
@@ -151,6 +167,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27372C442647E0ED003FE13F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				27372C432647E0ED003FE13F /* GameScene.swift */,
+				27372C452647E0ED003FE13F /* introRoom.sks */,
+				27372C462647E0ED003FE13F /* meetingRoom.sks */,
+				27372C472647E0ED003FE13F /* playgroundRoom.sks */,
+				27372C482647E0ED003FE13F /* loading.sks */,
+				27372C492647E0ED003FE13F /* instrumentRoom.sks */,
+				27372C4A2647E0ED003FE13F /* bookRoom.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		274B32F8263E3A7F00E077C6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +194,9 @@
 		276848BD26467F7800A9756F /* MeetingScene */ = {
 			isa = PBXGroup;
 			children = (
+				27372C422647E0ED003FE13F /* MeetingWorld.swift */,
 				276848BE26467F8B00A9756F /* MeetingScene.swift */,
+				27372C442647E0ED003FE13F /* Scenes */,
 			);
 			path = MeetingScene;
 			sourceTree = "<group>";
@@ -540,13 +572,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27372C502647E0EE003FE13F /* loading.sks in Resources */,
+				27372C512647E0EE003FE13F /* instrumentRoom.sks in Resources */,
+				27372C4F2647E0EE003FE13F /* playgroundRoom.sks in Resources */,
 				276848C62646D6D700A9756F /* 南宋书局体.TTF in Resources */,
 				27E5BCFF26402D32004C6C64 /* 踩大球.gif in Resources */,
 				27E5BCFD26402D28004C6C64 /* 梅花桩.gif in Resources */,
+				27372C4D2647E0EE003FE13F /* introRoom.sks in Resources */,
 				27E5BCF926402D13004C6C64 /* 跳高台.gif in Resources */,
 				27E5BD0126402D3B004C6C64 /* 踩高桌.gif in Resources */,
+				27372C522647E0EE003FE13F /* bookRoom.sks in Resources */,
 				27A00DBB262F1776001FF431 /* Preview Assets.xcassets in Resources */,
 				27E5BCFB26402D1D004C6C64 /* 玩绣球.gif in Resources */,
+				27372C4E2647E0EE003FE13F /* meetingRoom.sks in Resources */,
 				27A00DB8262F1776001FF431 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +603,7 @@
 				27FA47A526390AC50041E79A /* Colors.swift in Sources */,
 				274B32F5263E391100E077C6 /* GIFImage.swift in Sources */,
 				2725DF1126476F040010B703 /* OrganWorld.swift in Sources */,
+				27372C4B2647E0EE003FE13F /* MeetingWorld.swift in Sources */,
 				27A9981626404DEA0067D4F1 /* ActionTab.swift in Sources */,
 				2723F34F263E913000AD303E /* Tool.swift in Sources */,
 				274B3300263E463200E077C6 /* Action.swift in Sources */,
@@ -583,6 +622,7 @@
 				27A00DB4262F1776001FF431 /* DragonDancingApp.swift in Sources */,
 				27F4E0CA26423C8500BB0380 /* Organ.swift in Sources */,
 				2725DF53264786CE0010B703 /* AnimatableSystemFontModifier.swift in Sources */,
+				27372C4C2647E0EE003FE13F /* GameScene.swift in Sources */,
 				27FA47A32639060C0041E79A /* VerticalText.swift in Sources */,
 				274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */,
 				27E5BCDF263FEA13004C6C64 /* ExhibitionScene.swift in Sources */,

@@ -20,8 +20,8 @@ struct ContentView: View {
                 switch world.currentTab {
                 case .home:
                     HomeScene()
-//                case 1:
-//                    MeetingScene()
+                case .meeting:
+                    MeetingScene()
                 case .action:
                     ActionScene()
                 case .emotion:

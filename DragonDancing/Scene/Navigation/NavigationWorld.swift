@@ -15,6 +15,7 @@ class NavigationWorld: ObservableObject {
 
 enum SceneTab: Int {
     case home
+    case meeting
     case action
     case emotion
     case exhibition
