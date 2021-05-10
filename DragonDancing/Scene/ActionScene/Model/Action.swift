@@ -11,10 +11,10 @@ struct Action {
     let name: String
     
     var imageName: String {
-        name
+        "\(name)01"
     }
 
-    var gifName: String {
+    var videoName: String {
         name
     }
 }
@@ -23,7 +23,7 @@ extension Array where Element == Action {
     static let all = [
         Action(name: "踩大球"),
         Action(name: "玩绣球"),
-        Action(name: "踩高桌"),
+        Action(name: "上高桌"),
         Action(name: "跳高台"),
         Action(name: "梅花桩"),
     ]

@@ -5,35 +5,32 @@
 //  Created by Kyle on 2021/5/3.
 //
 
+import SpriteKit
 import SwiftUI
 
-// FIXME: Undone
 struct ActionTab: View {
     let actions: [Action]
     @State var selection = 0
     var body: some View {
         VStack {
-            ScrollView(.horizontal,
-                       showsIndicators: false) {
-                HStack {
-                    ForEach(actions, id: \.name) { action in
-                        ActionView(action: action)
-                            .frame(width: 300)
-                            .padding(.horizontal, 100)
-                    }
+            TabView(selection: $selection) {
+                ForEach(actions.indices) { index in
+                    ActionView(action: actions[index], showVideo: selection == index)
+                        .frame(idealWidth: 700)
                 }
-                .padding(.horizontal, 300)
             }
-            .coordinateSpace(name: "action_scene")
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
 
-            DotSlider(number: actions.count, showLine: true, value: $selection)
+            DotSlider(number: actions.count, showLine: false, value: $selection)
         }
         .padding(.vertical, 100)
     }
+    
 }
 
 struct ActionTab_Previews: PreviewProvider {
     static var previews: some View {
         ActionTab(actions: .all)
+            .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }
