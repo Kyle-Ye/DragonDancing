@@ -44,19 +44,13 @@ struct ActionView: View {
                     })
                 }
                 if showVideo && playing {
-                    SpriteView(scene: video(for: action.videoName, size: geometry.size))
+                    SpriteView(scene: ActionVideoScene(name: action.videoName, size: geometry.size))
                 }
             }
         }
         .onDisappear{
             playing = false
         }
-    }
-
-    func video(for name: String, size: CGSize) -> SKScene {
-        let scene = ActionVideoScene(size: size)
-        scene.videoName = name
-        return scene
     }
 }
 

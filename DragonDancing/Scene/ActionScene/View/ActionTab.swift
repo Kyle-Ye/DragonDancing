@@ -16,7 +16,7 @@ struct ActionTab: View {
             TabView(selection: $selection) {
                 ForEach(actions.indices) { index in
                     ActionView(action: actions[index], showVideo: selection == index)
-                        .frame(idealWidth: 700)
+                        .frame(idealWidth: 500)
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
