@@ -21,10 +21,10 @@ class GameScene: SKScene {
             skipable = false
             if GameScene.world.collectedObjects.count == 9 {
                 view?.presentScene(GameScene.gameoverRoom, transition: .crossFade(withDuration: 2))
+                GameScene.world.showBag = false
             }
             return
         }
-
         if let name = name, name == "loading" {
             view?.presentScene(GameScene.introRoom, transition: .crossFade(withDuration: 2))
         } else if let name = name, name == "introRoom" {
@@ -78,6 +78,10 @@ class GameScene: SKScene {
     var video: SKVideoNode!
 
     override func sceneDidLoad() {
+        if let name = name, name == "introRoom" {
+            GameScene.world.showBag = true
+        }
+
         if let name = name, name == "gameoverRoom" {
             let url: URL = Bundle.main.url(forResource: "meeting", withExtension: "mp4")!
             let player = AVPlayer(url: url)

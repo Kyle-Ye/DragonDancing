@@ -1,8 +1,0 @@
-extension Array where Element == Emoticon {
-    static let all = [
-        Emoticon(name: "静",
-                 description: "狮子经过千辛万苦,困难重重,身心感到疲倦,便须靜下來休息。（跋山涉水翻山越岭后卧地休息）"),
-        Emoticon(name: "惊",
-                 description:"狮子遇到危险,便会产生惊怕的动作,舞狮者便须要将其惊怕动作表达给观众。（受到惊吓，表现出害怕的样子）"),
-    ]
-}

@@ -9,24 +9,26 @@ import SpriteKit
 import SwiftUI
 
 struct MeetingScene: View {
-    @StateObject var world = MeetingWorld()
+    @ObservedObject var world = MeetingWorld()
     var body: some View {
         SpriteView(scene: GameScene.loading)
             .ignoresSafeArea()
             .overlay(
                 HStack {
-                    Image("bag")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100)
-                        .offset(y: -7)
-                    Text("\(world.collectedObjects.count) / 9")
-                        .font(.largeTitle.bold())
-                        .foregroundColor(.white)
+                    if world.showBag {
+                        Image("bag")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100)
+                            .offset(y: -7)
+                        Text("\(world.collectedObjects.count) / 9")
+                            .font(.largeTitle.bold())
+                            .foregroundColor(.white)
+                    }
                 },
                 alignment: .top
             )
-            .onAppear{
+            .onAppear {
                 GameScene.world = world
             }
     }

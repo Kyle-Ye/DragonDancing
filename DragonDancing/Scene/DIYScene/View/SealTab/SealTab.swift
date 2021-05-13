@@ -77,24 +77,24 @@ struct SealTab: View {
                 HStack {
                     VStack {
                         ForEach(0 ..< 5) { index in
-                            Image("印章浅色-\(index + 1)")
+                            Image("浅色\(index + 1)")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 100)
                                 .onDrag {
-                                    NSItemProvider(object: "印章浅色-\(index + 1)" as NSString)
+                                    NSItemProvider(object: "浅色\(index + 1)" as NSString)
                                 }
                         }
                     }
                     Divider()
                     VStack {
                         ForEach(0 ..< 5) { index in
-                            Image("印章粉色-\(index + 1)")
+                            Image("粉色\(index + 1)")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 100)
                                 .onDrag {
-                                    NSItemProvider(object: "印章粉色-\(index + 1)" as NSString)
+                                    NSItemProvider(object: "粉色\(index + 1)" as NSString)
                                 }
                         }
                     }

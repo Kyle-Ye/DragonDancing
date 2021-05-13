@@ -32,8 +32,6 @@ struct ContentView: View {
                     CultureScene()
                 case .diy:
                     DIYScene()
-                case .seal:
-                    SealScene()
                 }
             }
             VStack {

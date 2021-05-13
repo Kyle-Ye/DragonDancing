@@ -14,7 +14,7 @@ class SealWorld: ObservableObject {
     @Published var activeBackground = 0
     @Published var seals: [Seal] = []
     @Published var selectedSeals: Set<Seal> = []
-    var background = ["seal_1", "seal_2", "seal_3"]
+    var background = ["印章底-1", "印章底-2", "印章底-3"]
     func addSeal(_ name: String, at location: CGPoint, size: Double) {
         seals.append(Seal(name: name, x: Double(location.x), y: Double(location.y), size: size))
     }

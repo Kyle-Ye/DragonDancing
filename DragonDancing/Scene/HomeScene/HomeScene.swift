@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeScene: View {
+    @EnvironmentObject var world: NavigationWorld
     let provinces = [Province].all
     @State var selection: City?
     var body: some View {
@@ -17,6 +18,10 @@ struct HomeScene: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 600)
+//                Image("房子集合")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 600)
                 ForEach(provinces, id: \.name) { province in
                     ForEach(province.citys, id: \.name) { city in
                         Image(city.name)
@@ -56,6 +61,9 @@ struct HomeScene: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 80)
+                            .onTapGesture {
+                                world.currentTab = .culture
+                            }
                     }
                 )
                 Label(
@@ -65,6 +73,9 @@ struct HomeScene: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 80)
+                            .onTapGesture {
+                                world.currentTab = .diy
+                            }
                     }
                 )
             }
@@ -156,6 +167,7 @@ struct TimeLine: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScene()
+            .environmentObject(NavigationWorld())
             .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }

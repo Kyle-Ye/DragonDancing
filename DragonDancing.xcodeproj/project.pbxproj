@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2713E739264987F000623B65 /* 踩大球.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2713E734264987EF00623B65 /* 踩大球.mp4 */; };
-		2713E73A264987F000623B65 /* 梅花桩.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2713E735264987F000623B65 /* 梅花桩.mp4 */; };
-		2713E73B264987F000623B65 /* 跳高台.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2713E736264987F000623B65 /* 跳高台.mp4 */; };
-		2713E73C264987F000623B65 /* 上高桌.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2713E737264987F000623B65 /* 上高桌.mp4 */; };
-		2713E73D264987F000623B65 /* 玩绣球.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2713E738264987F000623B65 /* 玩绣球.mp4 */; };
+		2708B215264AB1D40005EA99 /* 踩大球.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2708B210264AB1D30005EA99 /* 踩大球.mp4 */; };
+		2708B216264AB1D40005EA99 /* 梅花桩.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2708B211264AB1D30005EA99 /* 梅花桩.mp4 */; };
+		2708B217264AB1D40005EA99 /* 上高桌.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2708B212264AB1D30005EA99 /* 上高桌.mp4 */; };
+		2708B218264AB1D40005EA99 /* 跳高台.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2708B213264AB1D40005EA99 /* 跳高台.mp4 */; };
+		2708B219264AB1D40005EA99 /* 玩绣球.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2708B214264AB1D40005EA99 /* 玩绣球.mp4 */; };
 		2713E73F2649884400623B65 /* ActionVideoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2713E73E2649884400623B65 /* ActionVideoScene.swift */; };
 		2723F34F263E913000AD303E /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723F34E263E913000AD303E /* Tool.swift */; };
 		2723F351263E914E00AD303E /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723F350263E914E00AD303E /* Lion.swift */; };
@@ -52,8 +52,6 @@
 		27BA22A126463B3B007A2B9C /* LionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BA22A026463B3B007A2B9C /* LionDetailView.swift */; };
 		27CB558B26437928009658DE /* CultureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB558A26437928009658DE /* CultureScene.swift */; };
 		27CB558D26437937009658DE /* CultureMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB558C26437937009658DE /* CultureMenu.swift */; };
-		27CB558F26437987009658DE /* SealScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB558E26437987009658DE /* SealScene.swift */; };
-		27CB5591264379E1009658DE /* SealMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB5590264379E1009658DE /* SealMenu.swift */; };
 		27CB559326437F0F009658DE /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB559226437F0F009658DE /* Culture.swift */; };
 		27CB559526437F18009658DE /* CultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CB559426437F18009658DE /* CultureView.swift */; };
 		27DDCFDB263D51B9008E36A2 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDCFDA263D51B9008E36A2 /* Emoticon.swift */; };
@@ -82,11 +80,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2713E734264987EF00623B65 /* 踩大球.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "踩大球.mp4"; sourceTree = "<group>"; };
-		2713E735264987F000623B65 /* 梅花桩.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梅花桩.mp4"; sourceTree = "<group>"; };
-		2713E736264987F000623B65 /* 跳高台.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "跳高台.mp4"; sourceTree = "<group>"; };
-		2713E737264987F000623B65 /* 上高桌.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上高桌.mp4"; sourceTree = "<group>"; };
-		2713E738264987F000623B65 /* 玩绣球.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "玩绣球.mp4"; sourceTree = "<group>"; };
+		2708B210264AB1D30005EA99 /* 踩大球.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "踩大球.mp4"; sourceTree = "<group>"; };
+		2708B211264AB1D30005EA99 /* 梅花桩.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梅花桩.mp4"; sourceTree = "<group>"; };
+		2708B212264AB1D30005EA99 /* 上高桌.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上高桌.mp4"; sourceTree = "<group>"; };
+		2708B213264AB1D40005EA99 /* 跳高台.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "跳高台.mp4"; sourceTree = "<group>"; };
+		2708B214264AB1D40005EA99 /* 玩绣球.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "玩绣球.mp4"; sourceTree = "<group>"; };
 		2713E73E2649884400623B65 /* ActionVideoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionVideoScene.swift; sourceTree = "<group>"; };
 		2723F34E263E913000AD303E /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		2723F350263E914E00AD303E /* Lion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
@@ -129,8 +127,6 @@
 		27BA22A026463B3B007A2B9C /* LionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionDetailView.swift; sourceTree = "<group>"; };
 		27CB558A26437928009658DE /* CultureScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureScene.swift; sourceTree = "<group>"; };
 		27CB558C26437937009658DE /* CultureMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureMenu.swift; sourceTree = "<group>"; };
-		27CB558E26437987009658DE /* SealScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealScene.swift; sourceTree = "<group>"; };
-		27CB5590264379E1009658DE /* SealMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealMenu.swift; sourceTree = "<group>"; };
 		27CB559226437F0F009658DE /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
 		27CB559426437F18009658DE /* CultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureView.swift; sourceTree = "<group>"; };
 		27DDCFDA263D51B9008E36A2 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
@@ -302,15 +298,6 @@
 			path = CultureScene;
 			sourceTree = "<group>";
 		};
-		27CB5589264378AF009658DE /* SealScene */ = {
-			isa = PBXGroup;
-			children = (
-				27CB558E26437987009658DE /* SealScene.swift */,
-				27CB5590264379E1009658DE /* SealMenu.swift */,
-			);
-			path = SealScene;
-			sourceTree = "<group>";
-		};
 		27CB559626437F1C009658DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,11 +455,11 @@
 		27E92463263FA99100ADBB81 /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				2713E734264987EF00623B65 /* 踩大球.mp4 */,
-				2713E735264987F000623B65 /* 梅花桩.mp4 */,
-				2713E737264987F000623B65 /* 上高桌.mp4 */,
-				2713E736264987F000623B65 /* 跳高台.mp4 */,
-				2713E738264987F000623B65 /* 玩绣球.mp4 */,
+				2708B210264AB1D30005EA99 /* 踩大球.mp4 */,
+				2708B211264AB1D30005EA99 /* 梅花桩.mp4 */,
+				2708B212264AB1D30005EA99 /* 上高桌.mp4 */,
+				2708B213264AB1D40005EA99 /* 跳高台.mp4 */,
+				2708B214264AB1D40005EA99 /* 玩绣球.mp4 */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -508,7 +495,6 @@
 				27E5BCD5263FEA13004C6C64 /* ExhibitionScene */,
 				27CB55882643787A009658DE /* CultureScene */,
 				27E5BCF72640288F004C6C64 /* DIYScene */,
-				27CB5589264378AF009658DE /* SealScene */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -574,20 +560,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2713E73C264987F000623B65 /* 上高桌.mp4 in Resources */,
 				27372C502647E0EE003FE13F /* loading.sks in Resources */,
-				2713E73B264987F000623B65 /* 跳高台.mp4 in Resources */,
 				27372C512647E0EE003FE13F /* instrumentRoom.sks in Resources */,
+				2708B217264AB1D40005EA99 /* 上高桌.mp4 in Resources */,
+				2708B218264AB1D40005EA99 /* 跳高台.mp4 in Resources */,
 				27372C4F2647E0EE003FE13F /* playgroundRoom.sks in Resources */,
-				2713E73D264987F000623B65 /* 玩绣球.mp4 in Resources */,
+				2708B219264AB1D40005EA99 /* 玩绣球.mp4 in Resources */,
 				27372C7B2648277A003FE13F /* meeting.mp4 in Resources */,
 				276848C62646D6D700A9756F /* 南宋书局体.TTF in Resources */,
-				2713E73A264987F000623B65 /* 梅花桩.mp4 in Resources */,
+				2708B216264AB1D40005EA99 /* 梅花桩.mp4 in Resources */,
 				27372C5526482405003FE13F /* gameoverRoom.sks in Resources */,
 				27372C4D2647E0EE003FE13F /* introRoom.sks in Resources */,
 				27372C522647E0EE003FE13F /* bookRoom.sks in Resources */,
 				27A00DBB262F1776001FF431 /* Preview Assets.xcassets in Resources */,
-				2713E739264987F000623B65 /* 踩大球.mp4 in Resources */,
+				2708B215264AB1D40005EA99 /* 踩大球.mp4 in Resources */,
 				27372C4E2647E0EE003FE13F /* meetingRoom.sks in Resources */,
 				27A00DB8262F1776001FF431 /* Assets.xcassets in Resources */,
 			);
@@ -613,7 +599,6 @@
 				27CB559526437F18009658DE /* CultureView.swift in Sources */,
 				276848C22646816A00A9756F /* Province.swift in Sources */,
 				27E5BCDE263FEA13004C6C64 /* ExhibitionDetailView.swift in Sources */,
-				27CB558F26437987009658DE /* SealScene.swift in Sources */,
 				27F4E0CE26424ADD00BB0380 /* DIYWorld.swift in Sources */,
 				27FA479E2638F4370041E79A /* Instrument.swift in Sources */,
 				27E5BCF026400BD6004C6C64 /* EmoticonTab.swift in Sources */,
@@ -633,7 +618,6 @@
 				27BA229B26463091007A2B9C /* SealTab.swift in Sources */,
 				276848C42646817700A9756F /* City.swift in Sources */,
 				274B3302263E468D00E077C6 /* ActionView.swift in Sources */,
-				27CB5591264379E1009658DE /* SealMenu.swift in Sources */,
 				2725DF55264786E90010B703 /* Seal.swift in Sources */,
 				27E5BCE0263FEA13004C6C64 /* ExhibitionMenu.swift in Sources */,
 				27E5BCF226400DD3004C6C64 /* CustomScale.swift in Sources */,

@@ -21,5 +21,4 @@ enum SceneTab: Int {
     case exhibition
     case culture
     case diy
-    case seal
 }

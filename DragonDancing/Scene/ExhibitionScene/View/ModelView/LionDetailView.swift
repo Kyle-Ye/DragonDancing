@@ -15,10 +15,12 @@ struct LionDetailView: View {
     var body: some View {
         HStack {
             ZStack {
-                Image(lion.lineImageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                if !style.isEmpty {
+                if style.isEmpty {
+                    Image(lion.lineImageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+
+                } else {
                     Image(lion.styleImageName(style))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -35,28 +37,28 @@ struct LionDetailView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 90, height: 90)
                             .onTapGesture {
-                                if style.isEmpty{
+                                if style.isEmpty {
                                     style = "1"
-                                }else{
+                                } else {
                                     style = ""
                                 }
                             }
                     } else {
-                        Color.pink
+                        Color.yellow
                             .frame(width: 30)
                             .clipShape(Circle())
                             .onTapGesture {
                                 showColor.toggle()
                                 style = "1"
                             }
-                        Color.orange
+                        Color.red
                             .frame(width: 30)
                             .clipShape(Circle())
                             .onTapGesture {
                                 showColor.toggle()
                                 style = "2"
                             }
-                        Color.blue
+                        Color.black
                             .frame(width: 30)
                             .clipShape(Circle())
                             .onTapGesture {
@@ -68,7 +70,7 @@ struct LionDetailView: View {
                             .clipShape(Circle())
                             .onTapGesture {
                                 showColor.toggle()
-                                style = "0"
+                                style = ""
                             }
                     }
                 },

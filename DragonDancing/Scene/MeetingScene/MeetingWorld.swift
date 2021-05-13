@@ -9,4 +9,5 @@ import SwiftUI
 
 class MeetingWorld: ObservableObject {
     @Published var collectedObjects:[String] = []
+    @Published var showBag = false
 }
