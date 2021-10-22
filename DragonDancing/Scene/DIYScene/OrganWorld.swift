@@ -27,7 +27,7 @@ class OrganWorld: ObservableObject {
         let controller = UIViewController(nibName: nil, bundle: nil)
         let view: UIView! = controller.view
         for organ in organs {
-            let image = UIImage(named: "\(organ.name)_\(organ.style + 1)")
+            let image = UIImage(named: organ.imageName)
             let imageView = UIImageView(image: image)
             imageView.tintColor = UIColor(organ.color)
             view.addSubview(imageView)

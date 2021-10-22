@@ -10,11 +10,27 @@ import SwiftUI
 struct OrganTab: View {
     @EnvironmentObject var world: NavigationWorld
     @EnvironmentObject var model: OrganWorld
+    @State var showAR = false
 
     var body: some View {
         HStack {
             VStack {
-                OrgansView(organs: model.organs)
+                if showAR {
+                    OrgansARView(organs: model.organs, showLine: true)
+                        .onTapGesture {
+                            showAR.toggle()
+                        }
+                } else {
+                    OrgansView(organs: model.organs)
+                        .overlay(
+                            Image("ARKit_Glyph")
+                                .onTapGesture {
+                                    showAR.toggle()
+                                },
+                            alignment: .bottomTrailing
+                        )
+                }
+
                 Image(model.organs[model.activeIndex].name)
                     .resizable()
                     .aspectRatio(contentMode: .fit)

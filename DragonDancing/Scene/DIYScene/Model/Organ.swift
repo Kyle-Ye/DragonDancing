@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct Organ{
-    let name:String
-    var style:Int
-    var color:Color
-    
-    init(name:String, style:Int = 0) {
+struct Organ {
+    let name: String
+    var style: Int
+    var color: Color
+
+    init(name: String, style: Int = 0) {
         self.name = name
         self.style = style
         self.color = .black
     }
 }
 
-extension Array where Element == Organ{
+extension Array where Element == Organ {
     static let all = [
         Organ(name: "cavity"),
         Organ(name: "eyes"),
@@ -28,3 +28,9 @@ extension Array where Element == Organ{
         Organ(name: "decoration"),
     ]
 }
+
+extension Organ {
+    var imageName: String { "\(name)_\(style + 1)" }
+}
+
+extension Organ: Equatable {}

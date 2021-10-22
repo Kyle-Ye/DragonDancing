@@ -30,6 +30,8 @@
 		27372C522647E0EE003FE13F /* bookRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C4A2647E0ED003FE13F /* bookRoom.sks */; };
 		27372C5526482405003FE13F /* gameoverRoom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27372C5426482405003FE13F /* gameoverRoom.sks */; };
 		27372C7B2648277A003FE13F /* meeting.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27372C7A2648277A003FE13F /* meeting.mp4 */; };
+		27468664272295CE00D9B4D3 /* OrgansARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27468663272295CE00D9B4D3 /* OrgansARView.swift */; };
+		27468667272296FB00D9B4D3 /* OrganNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27468666272296FB00D9B4D3 /* OrganNode.swift */; };
 		274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32F9263E3D8D00E077C6 /* DIYScene.swift */; };
 		274B32FE263E460200E077C6 /* ActionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FD263E460200E077C6 /* ActionScene.swift */; };
 		274B3300263E463200E077C6 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B32FF263E463200E077C6 /* Action.swift */; };
@@ -103,6 +105,8 @@
 		27372C4A2647E0ED003FE13F /* bookRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bookRoom.sks; sourceTree = "<group>"; };
 		27372C5426482405003FE13F /* gameoverRoom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = gameoverRoom.sks; sourceTree = "<group>"; };
 		27372C7A2648277A003FE13F /* meeting.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = meeting.mp4; sourceTree = "<group>"; };
+		27468663272295CE00D9B4D3 /* OrgansARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgansARView.swift; sourceTree = "<group>"; };
+		27468666272296FB00D9B4D3 /* OrganNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganNode.swift; sourceTree = "<group>"; };
 		274B32F9263E3D8D00E077C6 /* DIYScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYScene.swift; sourceTree = "<group>"; };
 		274B32FD263E460200E077C6 /* ActionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionScene.swift; sourceTree = "<group>"; };
 		274B32FF263E463200E077C6 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -178,6 +182,15 @@
 				27372C5426482405003FE13F /* gameoverRoom.sks */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		27468665272296E800D9B4D3 /* Organs+AR */ = {
+			isa = PBXGroup;
+			children = (
+				27468663272295CE00D9B4D3 /* OrgansARView.swift */,
+				27468666272296FB00D9B4D3 /* OrganNode.swift */,
+			);
+			path = "Organs+AR";
 			sourceTree = "<group>";
 		};
 		274B32F8263E3A7F00E077C6 /* Resource */ = {
@@ -275,6 +288,7 @@
 				27BA229826463080007A2B9C /* OrganTab.swift */,
 				27F4E0D026427C3E00BB0380 /* OrgansView.swift */,
 				27BA229E26463461007A2B9C /* OrgansColorView.swift */,
+				27468665272296E800D9B4D3 /* Organs+AR */,
 			);
 			path = OrganTab;
 			sourceTree = "<group>";
@@ -593,11 +607,13 @@
 				27FA47A526390AC50041E79A /* Colors.swift in Sources */,
 				2725DF1126476F040010B703 /* OrganWorld.swift in Sources */,
 				27372C4B2647E0EE003FE13F /* MeetingWorld.swift in Sources */,
+				27468667272296FB00D9B4D3 /* OrganNode.swift in Sources */,
 				27A9981626404DEA0067D4F1 /* ActionTab.swift in Sources */,
 				2723F34F263E913000AD303E /* Tool.swift in Sources */,
 				274B3300263E463200E077C6 /* Action.swift in Sources */,
 				27CB559526437F18009658DE /* CultureView.swift in Sources */,
 				276848C22646816A00A9756F /* Province.swift in Sources */,
+				27468664272295CE00D9B4D3 /* OrgansARView.swift in Sources */,
 				27E5BCDE263FEA13004C6C64 /* ExhibitionDetailView.swift in Sources */,
 				27F4E0CE26424ADD00BB0380 /* DIYWorld.swift in Sources */,
 				27FA479E2638F4370041E79A /* Instrument.swift in Sources */,

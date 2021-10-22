@@ -14,7 +14,7 @@ struct OrgansView: View {
     var body: some View {
         ZStack {
             ForEach(organs, id: \.name) { organ in
-                Image("\(organ.name)_\(organ.style + 1)")
+                Image(organ.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(organ.color)
