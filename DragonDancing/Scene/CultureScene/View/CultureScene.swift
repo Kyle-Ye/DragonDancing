@@ -16,7 +16,7 @@ struct CultureScene: View {
         HStack {
             VStack(spacing: 50) {
                 TabView(selection: $pageNumber) {
-                    ForEach(0 ..< cultures.count / 2) { index in
+                    ForEach(0 ..< cultures.count / 2, id: \.self) { index in
                         HStack(spacing: 100) {
                             CultureView(culture: cultures[index * 2])
                             CultureView(culture: cultures[index * 2 + 1])

@@ -12,7 +12,7 @@ struct EmoticonTab: View {
     @State var selection = 0
 
     var body: some View {
-        HStack(alignment: .top, spacing: 50) {
+        HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 113) {
                 Text(emoticons[selection].name)
                     .font(Font.custom("nansongshuju", size: 40))
@@ -31,19 +31,20 @@ struct EmoticonTab: View {
                     .padding(.leading, 100)
             }
             .padding(.leading, 50)
-            VStack {
+            Spacer()
+            VStack(alignment: .center) {
                 TabView(selection: $selection) {
-                    ForEach(emoticons.indices) { index in
+                    ForEach(emoticons.indices, id:\.self) { index in
                         Image(emoticons[index].imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(idealWidth: 700)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 DotSlider(number: emoticons.count, showLine: false, value: $selection)
             }
-            
+            .frame(minWidth: 350, alignment: .center)
+
         }
         .padding(.vertical, 100)
     }

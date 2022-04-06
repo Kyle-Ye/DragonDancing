@@ -17,7 +17,7 @@ struct DotSlider: View {
 
     var body: some View {
         HStack(spacing: spacing) {
-            ForEach(0 ..< number) { index in
+            ForEach(0 ..< number, id: \.self) { index in
                 Circle()
                     .foregroundColor(.accentColor)
                     .frame(
@@ -27,7 +27,7 @@ struct DotSlider: View {
                     .onTapGesture {
                         value = index
                     }
-                    .animation(.spring())
+                    .animation(.spring(), value: value)
             }
         }
         .background(

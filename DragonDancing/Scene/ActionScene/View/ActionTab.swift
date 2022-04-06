@@ -14,7 +14,7 @@ struct ActionTab: View {
     var body: some View {
         VStack {
             TabView(selection: $selection) {
-                ForEach(actions.indices) { index in
+                ForEach(actions.indices, id: \.self) { index in
                     ActionView(action: actions[index], showVideo: selection == index)
                         .frame(idealWidth: 500)
                 }

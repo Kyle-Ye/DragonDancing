@@ -13,7 +13,7 @@ struct OrgansColorView: View {
     var body: some View {
         HStack {
             VStack {
-                ForEach(model.organs.indices) { index in
+                ForEach(model.organs.indices, id: \.self) { index in
                     Image(model.organs[index].name)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -26,8 +26,8 @@ struct OrgansColorView: View {
             Divider()
                 .padding(.horizontal, world.showMenu ? 10 : 30)
             VStack {
-                ForEach(model.organs.indices) { index in
-                    HStack(spacing: 30) {
+                ForEach(model.organs.indices, id: \.self) { index in
+                    HStack(spacing: 10) {
                         ForEach(model.colors, id: \.self) { color in
                             color.clipShape(Circle())
                                 .frame(height: 80)

@@ -10,9 +10,14 @@ import SwiftUI
 struct NavigationMenu: View {
     @EnvironmentObject var world: NavigationWorld
     var body: some View {
+        menu().padding(.vertical, 50)
+            .frame(width: 140, alignment: .center)
+    }
+
+    @ViewBuilder
+    private func menu() -> some View {
         if let menu = world.menu {
-            menu.padding(.vertical, 50)
-                .frame(width: 140, alignment: .center)
+            menu
         } else {
             mainMenu()
         }
@@ -28,8 +33,6 @@ struct NavigationMenu: View {
             Spacer()
             icon(name: "exhibition", tab: .exhibition)
         }
-        .padding(.vertical, 50)
-        .frame(width: 140, alignment: .center)
     }
 
     private func icon(name: String, tab: SceneTab) -> some View {
@@ -49,8 +52,18 @@ struct NavigationMenu_Previews: PreviewProvider {
             NavigationMenu()
             Divider()
             Text("Hello")
+            Spacer()
         }
         .environmentObject(NavigationWorld())
-        .previewLayout(.fixed(width: 300, height: 1024))
+        .previewLayout(.sizeThatFits)
+
+        HStack {
+            NavigationMenu()
+            Divider()
+            Text("Hello")
+            Spacer()
+        }
+        .environmentObject(NavigationWorld())
+        .previewLayout(.sizeThatFits)
     }
 }

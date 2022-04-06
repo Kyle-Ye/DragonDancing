@@ -59,7 +59,7 @@ struct SealTab: View {
                 .padding(.top, 80)
                 .padding(.horizontal, 30)
                 HStack(spacing: 60) {
-                    ForEach(model.background.indices) { index in
+                    ForEach(model.background.indices, id: \.self) { index in
                         Image(model.background[index])
                             .resizable()
                             .aspectRatio(contentMode: .fit)

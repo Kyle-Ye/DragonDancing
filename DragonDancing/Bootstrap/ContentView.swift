@@ -33,6 +33,7 @@ struct ContentView: View {
                 case .diy:
                     DIYScene()
                 }
+                Spacer()
             }
             .overlay(alignment: .topLeading) {
                 Image("home")
