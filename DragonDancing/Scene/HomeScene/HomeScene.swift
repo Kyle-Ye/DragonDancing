@@ -12,16 +12,56 @@ struct HomeScene: View {
     let provinces = [Province].all
     @State var selection: City?
     var body: some View {
-        HStack {
+        mapView()
+            .overlay(alignment: .trailing) {
+                HStack(alignment: .bottom, spacing: 0) {
+                    Spacer()
+                    HStack(spacing: 80) {
+                        Label(
+                            title: { Text("文创").font(Font.custom("nansongshuju", size: 20)) },
+                            icon: {
+                                Image("文创")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 80)
+                                    .onTapGesture {
+                                        world.currentTab = .culture
+                                    }
+                            }
+                        )
+                        Label(
+                            title: { Text("DIY").font(Font.custom("nansongshuju", size: 20)) },
+                            icon: {
+                                Image("DIY总开关")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 80)
+                                    .onTapGesture {
+                                        world.currentTab = .diy
+                                    }
+                            }
+                        )
+                    }
+                    .labelStyle(VerticalLabelStyle())
+                    TimeLine(selection: $selection)
+                        .padding(.vertical, 50)
+                }
+            }
+    }
+
+    @ViewBuilder
+    func mapView() -> some View {
+        GeometryReader { proxy in
             ZStack {
                 Image("地图")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 600)
-//                Image("房子集合")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(width: 600)
+
+                //                Image("房子集合")
+                //                    .resizable()
+                //                    .aspectRatio(contentMode: .fit)
+                //                    .frame(width: 600)
                 ForEach(provinces, id: \.name) { province in
                     ForEach(province.citys, id: \.name) { city in
                         Image(city.name)
@@ -40,6 +80,7 @@ struct HomeScene: View {
                                         .foregroundColor(.white)
                                         .padding(.vertical, 10)
                                 }
+                                .zIndex(1)
                                 .offset(x: -30, y: -30)
                             )
                             .position(x: CGFloat(city.x + 10), y: CGFloat(city.y + 240))
@@ -48,44 +89,9 @@ struct HomeScene: View {
                     }
                 }
             }
-            .scaleEffect(1.2)
-            .padding(.leading, 100)
-            .zIndex(0)
-            TimeLine(selection: $selection)
-                .padding(.vertical, 50)
-                .zIndex(10)
-        }.overlay(
-            HStack(spacing: 80) {
-                Label(
-                    title: { Text("文创").font(Font.custom("nansongshuju", size: 20)) },
-                    icon: {
-                        Image("文创")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 80)
-                            .onTapGesture {
-                                world.currentTab = .culture
-                            }
-                    }
-                )
-                Label(
-                    title: { Text("DIY").font(Font.custom("nansongshuju", size: 20)) },
-                    icon: {
-                        Image("DIY总开关")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 80)
-                            .onTapGesture {
-                                world.currentTab = .diy
-                            }
-                    }
-                )
-            }
-            .labelStyle(VerticalLabelStyle())
-            .padding(.trailing, 200)
-            ,
-            alignment: .bottomTrailing
-        )
+            .scaleEffect(proxy.size.width / 600, anchor: UnitPoint(x: 0, y: 0.5))
+        }
+        .padding(.trailing, 400)
     }
 }
 
