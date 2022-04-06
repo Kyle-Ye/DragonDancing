@@ -20,7 +20,7 @@ struct OrgansView: View {
                     .foregroundColor(organ.color)
             }
         }
-        .animation(.spring())
+        .animation(.spring(), value: organs)
         .snapshot(model.captureImage, completion: { image in
             model.captureImage.toggle()
             model.shareImage = image

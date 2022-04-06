@@ -44,7 +44,7 @@ struct SealTab: View {
                     }
                 }
                 .border(Color.accentColor, width: 6)
-                .frame(width: 726, height: 726)
+                .frame(maxWidth: 726, maxHeight: 726)
                 .contextMenu {
                     Button(action: {
                         model.captureImage.toggle()
