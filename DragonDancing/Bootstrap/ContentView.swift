@@ -12,9 +12,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            HStack {
+            HStack(spacing: 0) {
                 if world.showMenu {
-                    NavigationMenu()
+                    NavigationMenu().padding(.top, 270)
                     Divider()
                 }
                 switch world.currentTab {
@@ -34,22 +34,18 @@ struct ContentView: View {
                     DIYScene()
                 }
             }
-            VStack {
-                HStack {
-                    Image("home")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 110, height: 110)
-                        .onTapGesture {
-                            if world.currentTab != .home {
-                                world.showMenu.toggle()
-                            }
+            .overlay(alignment: .topLeading) {
+                Image("home")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 110, height: 110)
+                    .onTapGesture {
+                        if world.currentTab != .home {
+                            world.showMenu.toggle()
                         }
-                        .padding(.top, 80)
-                        .padding(.leading, 15)
-                    Spacer()
-                }
-                Spacer()
+                    }
+                    .padding(.vertical, 80)
+                    .padding(.horizontal, 15)
             }
         }
         .animation(.spring())
