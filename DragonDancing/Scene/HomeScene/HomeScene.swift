@@ -44,14 +44,16 @@ struct HomeScene: View {
                             )
                             .position(x: CGFloat(city.x + 10), y: CGFloat(city.y + 240))
                             .opacity(selection == city ? 1.0 : 0.0)
-                            .animation(.spring())
+                            .animation(.spring(), value: selection)
                     }
                 }
             }
             .scaleEffect(1.2)
             .padding(.leading, 100)
+            .zIndex(0)
             TimeLine(selection: $selection)
                 .padding(.vertical, 50)
+                .zIndex(10)
         }.overlay(
             HStack(spacing: 80) {
                 Label(

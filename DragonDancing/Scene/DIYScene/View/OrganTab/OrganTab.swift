@@ -5,6 +5,7 @@
 //  Created by Kyle on 2021/5/8.
 //
 
+import ARKit
 import SwiftUI
 
 struct OrganTab: View {
@@ -15,7 +16,7 @@ struct OrganTab: View {
     var body: some View {
         HStack {
             VStack {
-                if showAR {
+                if showAR && ARFaceTrackingConfiguration.isSupported {
                     OrgansARView(organs: model.organs, showLine: true)
                         .onTapGesture {
                             showAR.toggle()
