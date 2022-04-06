@@ -59,7 +59,6 @@ struct OrganTab: View {
                         }
                 }
             }
-            .padding(.horizontal, world.showMenu ? 0 : 100)
             OrgansColorView()
         }
     }

@@ -26,6 +26,7 @@ struct DIYScene: View {
                 OrganTab()
             }
         }
+        .padding(.leading, world.showMenu ? 0 : 100)
         .onAppear {
             world.menu = AnyView(DIYMenu().environmentObject(model))
         }

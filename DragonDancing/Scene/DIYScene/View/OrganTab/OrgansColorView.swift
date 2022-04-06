@@ -24,7 +24,7 @@ struct OrgansColorView: View {
                 }
             }
             Divider()
-                .padding(.horizontal, world.showMenu ? 10 : 30)
+                .padding(.horizontal, world.showMenu ? 0 : 10)
             VStack {
                 ForEach(model.organs.indices, id: \.self) { index in
                     HStack(spacing: 10) {
@@ -43,9 +43,10 @@ struct OrgansColorView: View {
                     .opacity(index == model.activeIndex ? 1 : 0)
                 }
             }
-            .padding(.leading, 30)
+            .padding(.leading, 10)
         }
-        .frame(height: 600)    }
+        .frame(height: 600)
+    }
 }
 
 struct OrgansColorView_Previews: PreviewProvider {

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EmoticonTab: View {
+    @EnvironmentObject var world: NavigationWorld
+
     let emoticons: [Emoticon]
     @State var selection = 0
 
@@ -28,7 +30,7 @@ struct EmoticonTab: View {
                     .font(Font.custom("nansongshuju", size: 30))
                     .foregroundColor(.bodyText)
                     .frame(width: 250)
-                    .padding(.leading, 100)
+                    .padding(.leading, world.showMenu ? 100 : 180)
             }
             .padding(.leading, 50)
             Spacer()
