@@ -19,20 +19,19 @@ struct ActionView: View {
                 Image(action.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .overlay(
+                    .overlay(alignment: .topTrailing) {
                         Text(action.name)
                             .font(Font.custom("nansongshuju", size: 30).bold())
                             .foregroundColor(.titleText)
-                            .frame(width: 30)
                             .padding(.horizontal, 15)
                             .padding(.vertical, 30)
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
                                     .strokeBorder(Color.titleText, lineWidth: 2, antialiased: true)
                             )
-                            .padding(200)
-                        , alignment: .topTrailing
-                    )
+                            .padding(50)
+                    }
+
                 if showVideo && !playing {
                     Button(action: {
                         playing.toggle()
@@ -48,7 +47,7 @@ struct ActionView: View {
                 }
             }
         }
-        .onDisappear{
+        .onDisappear {
             playing = false
         }
     }
