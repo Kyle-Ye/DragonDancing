@@ -54,7 +54,8 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScene()
             .environmentObject(NavigationWorld())
-            .previewLayout(.fixed(width: 1366, height: 1024))
+            .previewInterfaceOrientation(.landscapeLeft)
+            .preview(on: .iPadDevices)
     }
 }
 

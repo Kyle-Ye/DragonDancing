@@ -79,6 +79,7 @@
 		27FA479E2638F4370041E79A /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA479D2638F4370041E79A /* Instrument.swift */; };
 		27FA47A32639060C0041E79A /* VerticalText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA47A22639060C0041E79A /* VerticalText.swift */; };
 		27FA47A526390AC50041E79A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA47A426390AC50041E79A /* Colors.swift */; };
+		AE636DB127FED7CB002BF0A3 /* DevicePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636DB027FED7CB002BF0A3 /* DevicePreview.swift */; };
 		AED92BFC27FEA9FC00EB208B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED92BFB27FEA9FC00EB208B /* MapView.swift */; };
 		AED92BFE27FEAA1B00EB208B /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED92BFD27FEAA1B00EB208B /* TimeLine.swift */; };
 /* End PBXBuildFile section */
@@ -158,6 +159,7 @@
 		27FA479D2638F4370041E79A /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
 		27FA47A22639060C0041E79A /* VerticalText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalText.swift; sourceTree = "<group>"; };
 		27FA47A426390AC50041E79A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AE636DB027FED7CB002BF0A3 /* DevicePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePreview.swift; sourceTree = "<group>"; };
 		AED92BFB27FEA9FC00EB208B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AED92BFD27FEAA1B00EB208B /* TimeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +275,7 @@
 				27DDCFE1263D841F008E36A2 /* snapshot.swift */,
 				27F4E0D226428C8B00BB0380 /* ShareView.swift */,
 				27E5BCF126400DD3004C6C64 /* CustomScale.swift */,
+				AE636DB027FED7CB002BF0A3 /* DevicePreview.swift */,
 			);
 			path = UtilView;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				27BA229926463080007A2B9C /* OrganTab.swift in Sources */,
 				27E92462263F92C900ADBB81 /* Exhibition.swift in Sources */,
 				274B32FE263E460200E077C6 /* ActionScene.swift in Sources */,
+				AE636DB127FED7CB002BF0A3 /* DevicePreview.swift in Sources */,
 				2725DF52264786CE0010B703 /* Extensions.swift in Sources */,
 				27DDCFE2263D841F008E36A2 /* snapshot.swift in Sources */,
 				27F4E0D326428C8B00BB0380 /* ShareView.swift in Sources */,

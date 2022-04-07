@@ -14,16 +14,15 @@ struct MapView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .leading) {
                 Image("地图")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 600)
-
-                //                Image("房子集合")
-                //                    .resizable()
-                //                    .aspectRatio(contentMode: .fit)
-                //                    .frame(width: 600)
+//                Image("房子集合")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 600)
                 ForEach(provinces, id: \.name) { province in
                     ForEach(province.citys, id: \.name) { city in
                         Image(city.name)
@@ -45,15 +44,15 @@ struct MapView: View {
                                 .zIndex(1)
                                 .offset(x: -30, y: -30)
                             )
-                            .position(x: CGFloat(city.x + 10), y: CGFloat(city.y + 240))
+                            .position(x: CGFloat(city.x + 10), y: CGFloat(city.y + 30))
                             .opacity(selection == city ? 1.0 : 0.0)
                             .animation(.spring(), value: selection)
                     }
                 }
             }
-            .scaleEffect(proxy.size.width / 600, anchor: UnitPoint(x: 0, y: 0.5))
+            .scaleEffect(proxy.size.width / 600, anchor: UnitPoint(x: 0, y: 0))
         }
-        .padding(.trailing, 400)
+        .padding(.trailing, 200)
     }
 }
 

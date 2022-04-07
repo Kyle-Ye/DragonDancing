@@ -37,6 +37,7 @@ struct TimeLine: View {
                                         .onAppear {
                                             selection = city
                                         }
+                                        .background(Color.white.blur(radius: 10))
                                     }
                                     VStack {
                                         Image(city.name)
@@ -50,7 +51,7 @@ struct TimeLine: View {
                                         .frame(width: 50, height: 3)
                                 }
                                 .opacity(scaleFactor(in: geometry))
-                                .animation(.spring())
+                                .animation(.spring(), value: scaleFactor(in: geometry))
                                 .frame(width: geometry.frame(in: .global).width, height: geometry.frame(in: .global).height, alignment: .trailing)
 //                                .overlay(
 //                                    VStack {

@@ -67,5 +67,7 @@ struct OrganTab: View {
 struct OrganTab_Previews: PreviewProvider {
     static var previews: some View {
         OrganTab()
+            .environmentObject(NavigationWorld())
+            .environmentObject(OrganWorld())
     }
 }
