@@ -79,6 +79,8 @@
 		27FA479E2638F4370041E79A /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA479D2638F4370041E79A /* Instrument.swift */; };
 		27FA47A32639060C0041E79A /* VerticalText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA47A22639060C0041E79A /* VerticalText.swift */; };
 		27FA47A526390AC50041E79A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA47A426390AC50041E79A /* Colors.swift */; };
+		AED92BFC27FEA9FC00EB208B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED92BFB27FEA9FC00EB208B /* MapView.swift */; };
+		AED92BFE27FEAA1B00EB208B /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED92BFD27FEAA1B00EB208B /* TimeLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +158,8 @@
 		27FA479D2638F4370041E79A /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
 		27FA47A22639060C0041E79A /* VerticalText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalText.swift; sourceTree = "<group>"; };
 		27FA47A426390AC50041E79A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AED92BFB27FEA9FC00EB208B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AED92BFD27FEAA1B00EB208B /* TimeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +445,8 @@
 			children = (
 				276848C02646815E00A9756F /* Model */,
 				27A7EBB6262F2A550045FDAD /* HomeScene.swift */,
+				AED92BFB27FEA9FC00EB208B /* MapView.swift */,
+				AED92BFD27FEAA1B00EB208B /* TimeLine.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -630,10 +636,12 @@
 				27372C4C2647E0EE003FE13F /* GameScene.swift in Sources */,
 				27FA47A32639060C0041E79A /* VerticalText.swift in Sources */,
 				274B32FA263E3D8D00E077C6 /* DIYScene.swift in Sources */,
+				AED92BFE27FEAA1B00EB208B /* TimeLine.swift in Sources */,
 				27E5BCDF263FEA13004C6C64 /* ExhibitionScene.swift in Sources */,
 				27BA229B26463091007A2B9C /* SealTab.swift in Sources */,
 				276848C42646817700A9756F /* City.swift in Sources */,
 				274B3302263E468D00E077C6 /* ActionView.swift in Sources */,
+				AED92BFC27FEA9FC00EB208B /* MapView.swift in Sources */,
 				2725DF55264786E90010B703 /* Seal.swift in Sources */,
 				27E5BCE0263FEA13004C6C64 /* ExhibitionMenu.swift in Sources */,
 				27E5BCF226400DD3004C6C64 /* CustomScale.swift in Sources */,
